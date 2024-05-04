@@ -112,7 +112,7 @@ function PathTracerDrone:overrideShipFrameGetCustomSettings()
 	local ptd = self
 	function self.ShipFrame.remoteControlManager:getCustomSettings()
 		return {
-			walk = false,
+			walk = ptd:walk(),
 		}
 	end
 end
