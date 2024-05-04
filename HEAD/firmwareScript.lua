@@ -1,8 +1,8 @@
-local HoundTurretBase = require "lib.tilt_ships.HoundTurretBase"
-local HoundTurretBaseInfiniteAmmo = require "lib.tilt_ships.HoundTurretBaseInfiniteAmmo"
-local HoundTurretBaseCreateVault = require "lib.tilt_ships.HoundTurretBaseCreateVault"
 local TenThrusterTemplateVerticalCompactSP = require "lib.tilt_ships.TenThrusterTemplateVerticalCompactSP"
+local PathTracerDrone = require "lib.tilt_ships.PathTracerDrone"
 
+local Path = require "lib.paths.Path"
+local path_utilities = require "lib.path_utilities"
 
 local instance_configs = {
 	radar_config = {
@@ -12,7 +12,7 @@ local instance_configs = {
 		player_name_whitelist={},
 	},
 	ship_constants_config = {
-		DRONE_ID = 101,
+		DRONE_ID = 201,
 		THRUSTER_TIER = 5,
 		THRUSTER_TABLE_DIRECTORY = "./input_thruster_table/thruster_table.json",
 		PID_SETTINGS=
@@ -57,22 +57,40 @@ local instance_configs = {
 		REPLY_DUMP_CHANNEL = 10000,
 	},
 	rc_variables = {
-		orbit_offset = vector.new(7,5,10),
+		
 	},
-	hound_custom_config = {
-		ALTERNATING_FIRE_SEQUENCE_COUNT = 3,
-		--GUNS_COOLDOWN_DELAY = 0.2,
+	path_tracer_custom_config = {
+		SPLINE_COORDS = {}
 	},
 }
+spline_coords = {}
+
+waypoints = {
+	{pos = vector.new(9,-55,26)},
+	{pos = vector.new(1,-49,41)},
+	{pos = vector.new(-10,-44,17)},
+	{pos = vector.new(0,-50,9)},
+}
+
+local h = path_utilities.generateHelix(10,3,2.5,15)
+path_utilities.recenterStartToOrigin(h)
+path_utilities.offsetCoords(h,vector.new(30,-40,20))
+local waypoint_length = #waypoints
+for i,coord in ipairs(h) do
+	waypoints[i+waypoint_length] = {pos = coord}
+end
+
+if (#waypoints>3) then
+	local loop_path = true
+	local ship_path = Path(waypoints,loop_path)
+	spline_coords = ship_path:getNormalizedCoordsWithGradientsAndNormals(0.7,loop_path)
+end
 
 
-local drone = TenThrusterTemplateVerticalCompactSP(instance_configs)
 
---local drone = HoundTurretBase(instance_configs)
+instance_configs.path_tracer_custom_config.SPLINE_COORDS = spline_coords
 
---local drone = HoundTurretBaseInfiniteAmmo(instance_configs) --USE THIS IF YOU WANT TO USE ONE OF THE WIRELESS CREATE BIG CANNONS VARIANTS
-
---local drone = HoundTurretBaseCreateVault(instance_configs) --USE THIS IF YOU WANT TO USE ONE OF THE VAULT CREATE BIG CANNONS VARIANTS
-
+--local drone = TenThrusterTemplateVerticalCompactSP(instance_configs)
+local drone = PathTracerDrone(instance_configs)
 
 drone:run()
