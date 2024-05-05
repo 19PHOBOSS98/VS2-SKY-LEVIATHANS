@@ -58,22 +58,21 @@ function SomePeripheralsRadar:Targeting(arguments)
 		mob_targets = {},
 		
 		updateShipTargets = function(self)
-			if(not spr.peripheral) then
+			if(not self.peripheral) then
 				return
 			end
 			self.ship_targets = spr:scanForShips(self.range)
 			self.shipListScroller:updateListSize(#self.ship_targets)
 		end,
 		updatePlayerTargets = function(self)
-			if(not spr.peripheral) then
+			if(not self.peripheral) then
 				return
 			end
-			print("thread is running")
 			self.player_targets = spr:scanForPlayers(self.range)
 			self.playerListScroller:updateListSize(#self.player_targets)
 		end,
 		updateMobTargets = function(self)
-			if(not spr.peripheral) then
+			if(not self.peripheral) then
 				return
 			end
 			self.mob_targets = spr:scanForEntities(self.range)

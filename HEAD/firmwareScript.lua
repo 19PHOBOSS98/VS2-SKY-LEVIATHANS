@@ -77,7 +77,7 @@ path_utilities.recenterStartToOrigin(h)
 path_utilities.offsetCoords(h,vector.new(30,-40,20))
 local waypoint_length = #waypoints
 for i,coord in ipairs(h) do
-	waypoints[i+waypoint_length] = {pos = coord}
+	--waypoints[i+waypoint_length] = {pos = coord}
 end
 
 if (#waypoints>3) then
