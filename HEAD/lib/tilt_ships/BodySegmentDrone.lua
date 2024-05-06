@@ -64,7 +64,7 @@ function BodySegmentDrone:initializeShipFrameClass(instance_configs)
 	configs.rc_variables.run_mode = false
 
 	self:setShipFrameClass(configs)
-	--self.ShipFrame:setTargetMode(false,"SHIP")
+	self.ShipFrame:setTargetMode(false,"SHIP")
 	
 end
 
@@ -75,7 +75,8 @@ end
 
 function BodySegmentDrone:setSegmentDelay(new_value)
 	self.rc_variables.segment_delay = tonumber(new_value)
-	self.saved_alignment_vectors = {self.ShipFrame.ship_rotation:localPositiveZ()}
+	self.saved_alignment_position = {self.ShipFrame.ship_global_position}
+	self.saved_alignment_orientation = {self.ShipFrame.ship_rotation}
 end
 function BodySegmentDrone:setGapLength(new_value)
 	self.rc_variables.gap_length = tonumber(new_value)
@@ -86,17 +87,17 @@ end
 
 --overridden functions--
 function BodySegmentDrone:overrideShipFrameCustomProtocols()
-	local ptd = self
+	local bsd = self
 	function self.ShipFrame:customProtocols(msg)
 		local command = msg.cmd
 		command = command and tonumber(command) or command
 		case =
 		{
 		["segment_delay"] = function (arguments)
-			ptd:setSegmentDelay(arguments)
+			bsd:setSegmentDelay(arguments)
 		end,
 		["gap_length"] = function (arguments)
-			ptd:setGapLength(arguments)
+			bsd:setGapLength(arguments)
 		end,
 		["HUSH"] = function (args) --kill command
 			self:resetRedstone()
@@ -117,26 +118,28 @@ function BodySegmentDrone:overrideShipFrameCustomProtocols()
 end
 
 function BodySegmentDrone:overrideShipFrameGetCustomSettings()
-	local ptd = self
+	local bsd = self
 	function self.ShipFrame.remoteControlManager:getCustomSettings()
 		return {
-			segment_delay = ptd.rc_variables.segment_delay,
-			gap_length = ptd.rc_variables.gap_length,
-			group_id = ptd.rc_variables.group_id,
-			segment_number = ptd.rc_variables.segment_number,
+			segment_delay = bsd.rc_variables.segment_delay,
+			gap_length = bsd.rc_variables.gap_length,
+			group_id = bsd.rc_variables.group_id,
+			segment_number = bsd.rc_variables.segment_number,
 		}
 	end
 end
 
 function BodySegmentDrone:overrideShipFrameCustomPreFlightLoopBehavior()
-	local ptd = self
+	local bsd = self
 	function self.ShipFrame:customPreFlightLoopBehavior()
-		ptd.saved_alignment_vectors = {self.ship_rotation:localPositiveZ()}
+		bsd.saved_alignment_position = {self.ship_global_position}
+		bsd.saved_alignment_orientation = {self.ship_rotation}
+		bsd.prev_time = os.clock()
 	end
 end
 
 function BodySegmentDrone:overrideShipFrameCustomFlightLoopBehavior()
-	local ptd = self
+	local bsd = self
 	function self.ShipFrame:customFlightLoopBehavior()
 		--[[
 		useful variables to work with:
@@ -155,25 +158,38 @@ function BodySegmentDrone:overrideShipFrameCustomFlightLoopBehavior()
 			return;
 		end
 
+		local elapsed_time = os.clock() - bsd.prev_time
+		if (elapsed_time < 0.1) then
+			return
+		else
+			bsd.prev_time = os.clock()
+		end
+
 		local leader = self.sensors.orbitTargeting:getTargetSpatials()
-		local actual_leader_orientation = quaternion.fromRotation(leader.orientation:localPositiveZ(),45)*leader.orientation
-		local new_leader_left_vector = actual_leader_orientation:localPositiveZ()
+		-- self:debugProbe({"leader.velocity: ",leader.velocity:length()})
+		-- if (math.abs(leader.velocity:length()) < 3) then
+		-- 	return
+		-- end
+		--local actual_leader_orientation = quaternion.fromRotation(leader.orientation:localPositiveY(),45)*leader.orientation
+		--local new_leader_left_vector = actual_leader_orientation:localPositiveY()
+
+		--local chain_link_pos = leader.position + actual_leader_orientation:localPositiveZ()-- * -bsd.rc_variables.gap_length
+		--self.target_global_position = flight_utilities.adjustOrbitRadiusPosition(self.target_global_position,chain_link_pos,bsd.rc_variables.gap_length)
+		--self.target_global_position = flight_utilities.adjustOrbitRadiusPosition(leader.position,chain_link_pos,bsd.rc_variables.gap_length)
+		local actual_gap = math.abs((leader.position - self.sensors.shipReader:getWorldspacePosition()):length())
 		
-		local chain_link_pos = leader.position + actual_leader_orientation:localPositiveX() * -ptd.rc_variables.gap_length
-		self.target_global_position = flight_utilities.adjustOrbitRadiusPosition(self.target_global_position,chain_link_pos,ptd.rc_variables.gap_length)
+		if (actual_gap >= bsd.rc_variables.gap_length) then
+			table.insert(bsd.saved_alignment_orientation,1,leader.orientation)
+			table.insert(bsd.saved_alignment_position,1,leader.position)
 
-		table.insert(ptd.saved_alignment_vectors,1,new_leader_left_vector)
-
-		if (#ptd.saved_alignment_vectors>ptd.rc_variables.segment_delay) then
-			table.remove(ptd.saved_alignment_vectors)
+			if (#bsd.saved_alignment_orientation>bsd.rc_variables.segment_delay) then
+				table.remove(bsd.saved_alignment_orientation)
+				table.remove(bsd.saved_alignment_position)
+			end
 		end
-
-		if (self.position_error:length()<5) then
-			local leader_left_vector = ptd.saved_alignment_vectors[#ptd.saved_alignment_vectors]
-			local movement_vector = (chain_link_pos - self.ship_global_position):normalize()
-			--self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveZ(), leader_left_vector)*self.target_rotation
-			--self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveX(), movement_vector)*self.target_rotation
-		end
+		self.target_global_position = bsd.saved_alignment_position[#bsd.saved_alignment_position]
+		self.target_rotation = bsd.saved_alignment_orientation[#bsd.saved_alignment_orientation]
+		
 	end
 end
 
