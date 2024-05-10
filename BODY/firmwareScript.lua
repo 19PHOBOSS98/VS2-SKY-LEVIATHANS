@@ -60,7 +60,8 @@ local instance_configs = {
 		
 	},
 	body_segment_custom_config = {
-
+		segment_delay = 5,
+		gap_length = 5,
 	},
 }
 
