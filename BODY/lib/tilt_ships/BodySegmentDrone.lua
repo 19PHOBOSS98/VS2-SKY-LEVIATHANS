@@ -75,7 +75,7 @@ end
 
 function BodySegmentDrone:setSegmentDelay(new_value)
 	self.rc_variables.segment_delay = tonumber(new_value)
-	self.saved_alignment_vectors = {self.ship_rotation:localPositiveZ()}
+	self.saved_alignment_vectors = {self.ShipFrame.ship_rotation:localPositiveZ()}
 end
 function BodySegmentDrone:setGapLength(new_value)
 	self.rc_variables.gap_length = tonumber(new_value)
