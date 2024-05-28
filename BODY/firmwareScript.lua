@@ -69,4 +69,48 @@ local instance_configs = {
 --local drone = TenThrusterTemplateVerticalCompactSP(instance_configs)
 local drone = BodySegmentDrone(instance_configs)
 
+local droneShipFrame = drone.ShipFrame
+
+local cloud_level = 240
+
+
+local timer_delay = 0.1 --seconds
+
+local count_down = timer_delay
+
+local tick_rate = 0.05
+local current_state = false
+local prev_state = current_state
+
+--switches HammerHead Mirage frame depending on ship altitude
+function setMirageCloudLevelMode(current_ship_altitude)
+	local rs = false
+	if(count_down > 0) then
+		rs = true
+	else
+		rs = false
+	end
+
+	if(current_ship_altitude <= cloud_level) then
+		redstone.setOutput("front",rs)
+		redstone.setOutput("back",false)
+		current_state = true
+	else
+		redstone.setOutput("front",false)
+		redstone.setOutput("back",rs)
+		current_state = false
+	end
+
+	count_down = math.max(count_down - tick_rate, 0)
+
+	if(prev_state ~= current_state) then
+		prev_state = current_state
+		count_down = timer_delay
+	end
+end
+
+function droneShipFrame:customFlightLoopBehavior()
+	setMirageCloudLevelMode(self.ship_global_position.y)
+end
+
 drone:run()
