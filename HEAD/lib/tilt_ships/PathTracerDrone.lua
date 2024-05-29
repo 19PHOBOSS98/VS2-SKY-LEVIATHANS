@@ -146,8 +146,8 @@ function PathTracerDrone:overrideShipFrameCustomFlightLoopBehavior()
 		local normal = ptd.SPLINE_COORDS[ptd.tracker:getCurrentIndex()].normal
 
 		--rotation
-		self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveY(), normal)*self.target_rotation
-		self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveZ(), tangent)*self.target_rotation
+		self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveX(), normal)*self.target_rotation
+		self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveY(), tangent)*self.target_rotation
 		
 		--position
 		self.target_global_position = ptd.SPLINE_COORDS[ptd.tracker:getCurrentIndex()].pos
