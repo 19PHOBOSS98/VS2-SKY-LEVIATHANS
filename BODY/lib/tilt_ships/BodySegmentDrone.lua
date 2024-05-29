@@ -166,9 +166,9 @@ function BodySegmentDrone:overrideShipFrameCustomFlightLoopBehavior()
 		local leader = self.sensors.orbitTargeting:getTargetSpatials()
 
 		local actual_leader_orientation = quaternion.fromRotation(leader.orientation:localPositiveY(),45)*leader.orientation
-		local new_leader_left_vector = actual_leader_orientation:localPositiveX()
+		local new_leader_left_vector = actual_leader_orientation:localPositiveZ()
 
-		local chain_link_pos = leader.position + actual_leader_orientation:localPositiveZ() * -bsd.rc_variables.gap_length
+		local chain_link_pos = leader.position + (actual_leader_orientation:localPositiveY()*1) * -bsd.rc_variables.gap_length
 		self.target_global_position = flight_utilities.adjustOrbitRadiusPosition(self.target_global_position,chain_link_pos,bsd.rc_variables.gap_length)
 		
 		table.insert(bsd.saved_alignment_vectors,1,new_leader_left_vector)
@@ -180,8 +180,8 @@ function BodySegmentDrone:overrideShipFrameCustomFlightLoopBehavior()
 		if (self.position_error:length()<5) then
 			local leader_left_vector = bsd.saved_alignment_vectors[#bsd.saved_alignment_vectors]
 			local movement_vector = (chain_link_pos - self.ship_global_position):normalize()
-			self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveX(), leader_left_vector)*self.target_rotation
-			self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveZ(), movement_vector)*self.target_rotation
+			self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveZ(), leader_left_vector)*self.target_rotation
+			self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveY(), movement_vector)*self.target_rotation
 		end
 	end
 end
