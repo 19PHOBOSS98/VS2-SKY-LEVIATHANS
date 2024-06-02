@@ -1,3 +1,4 @@
+--ID 32
 local TenThrusterTemplateVerticalCompactSP = require "lib.tilt_ships.TenThrusterTemplateVerticalCompactSP"
 local PathTracerDrone = require "lib.tilt_ships.PathTracerDrone"
 
@@ -6,13 +7,13 @@ local path_utilities = require "lib.path_utilities"
 
 local instance_configs = {
 	radar_config = {
-		designated_ship_id = "3",
+		designated_ship_id = "4",
 		designated_player_name="PHO",
 		ship_id_whitelist={},
 		player_name_whitelist={},
 	},
 	ship_constants_config = {
-		DRONE_ID = 201,
+		DRONE_ID = 205,
 		THRUSTER_TIER = 5,
 		THRUSTER_TABLE_DIRECTORY = "./input_thruster_table/thruster_table.json",
 		PID_SETTINGS=
@@ -87,14 +88,11 @@ if (#waypoints>3) then
 end
 
 
-
 instance_configs.path_tracer_custom_config.SPLINE_COORDS = spline_coords
 
 --local drone = TenThrusterTemplateVerticalCompactSP(instance_configs)
 local drone = PathTracerDrone(instance_configs)
-
-
-local droneShipFrame = drone.ShipFrame
+--local drone = TenThrusterTemplateHorizontalCompactSP(instance_configs)
 
 local cloud_level = 240
 
@@ -134,8 +132,7 @@ function setMirageCloudLevelMode(current_ship_altitude)
 	end
 end
 
-function droneShipFrame:customFlightLoopBehavior()
-	setMirageCloudLevelMode(self.ship_global_position.y)
+function drone:droneCustomFlightLoopBehavior()
+	setMirageCloudLevelMode(self.ShipFrame.ship_global_position.y)
 end
-
 drone:run()

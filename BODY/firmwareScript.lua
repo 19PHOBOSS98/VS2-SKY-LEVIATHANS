@@ -1,3 +1,4 @@
+--ID 21
 local TenThrusterTemplateVerticalCompactSP = require "lib.tilt_ships.TenThrusterTemplateVerticalCompactSP"
 local BodySegmentDrone = require "lib.tilt_ships.BodySegmentDrone"
 
@@ -61,15 +62,13 @@ local instance_configs = {
 	},
 	body_segment_custom_config = {
 		segment_delay = 5,
-		gap_length = 5,
+		gap_length = 4,
 	},
 }
 
 
 --local drone = TenThrusterTemplateVerticalCompactSP(instance_configs)
 local drone = BodySegmentDrone(instance_configs)
-
-local droneShipFrame = drone.ShipFrame
 
 local cloud_level = 240
 
@@ -109,8 +108,7 @@ function setMirageCloudLevelMode(current_ship_altitude)
 	end
 end
 
-function droneShipFrame:customFlightLoopBehavior()
-	setMirageCloudLevelMode(self.ship_global_position.y)
+function drone:droneCustomFlightLoopBehavior()
+	setMirageCloudLevelMode(self.ShipFrame.ship_global_position.y)
 end
-
 drone:run()
