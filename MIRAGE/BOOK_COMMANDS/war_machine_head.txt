@@ -1,0 +1,8 @@
+activeLow:true,
+files:[wm_head_010],
+move:[0,0,-10],
+pScale:[0.5,0.5,0.5],
+pMove:[-0.9,-4,-0.9],
+
+pRotatePivot:[0.5,0.5,0.5],
+pRotate:[90,0,-45]

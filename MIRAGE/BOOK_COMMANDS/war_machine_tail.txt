@@ -1,0 +1,7 @@
+activeLow:true,
+files:[wm_tail],
+move:[-4,0,10],
+pScale:[1,1,1],
+pMove:[-1.05,15,-1.05],
+pRotatePivot:[0.5,0.5,0.5],
+pRotate:[90,0,-45]
