@@ -22,5 +22,5 @@
 -- 	os.sleep(1)
 -- end
 
-print("ship:",ship.getId()," starting ...")
+print("ship ID:",ship.getId()," starting ...")
 shell.run("firmwareScript.lua")
