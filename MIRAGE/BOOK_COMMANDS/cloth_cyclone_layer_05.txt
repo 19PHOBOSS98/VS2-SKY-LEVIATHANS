@@ -1,0 +1,10 @@
+activeLow:true,
+files:[cloth_pod_off_001,cloth_pod_003],
+move:[-50,1000,-130],
+pMove:[25,670,25],
+pScale:[0.02,0.02,0.02],
+pSpinAxis:[0,1,0],
+pSpinPivot:[0.5,0.5,0.5],
+pSpinSpeed:180,
+pSpinOffset:180,
+loop:false
