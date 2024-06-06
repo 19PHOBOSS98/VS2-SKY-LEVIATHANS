@@ -154,12 +154,12 @@ function setMirageCloudLevelMode(current_ship_altitude)
 	end
 
 	if(current_ship_altitude <= cloud_level) then
-		redstone.setOutput("front",rs)
-		redstone.setOutput("back",false)
+		redstone.setOutput("left",rs)
+		redstone.setOutput("right",false)
 		current_state = true
 	else
-		redstone.setOutput("front",false)
-		redstone.setOutput("back",rs)
+		redstone.setOutput("left",false)
+		redstone.setOutput("right",rs)
 		current_state = false
 	end
 
