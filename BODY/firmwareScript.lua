@@ -1,4 +1,3 @@
---ID 21
 local TenThrusterTemplateVerticalCompactSP = require "lib.tilt_ships.TenThrusterTemplateVerticalCompactSP"
 local BodySegmentDrone = require "lib.tilt_ships.BodySegmentDrone"
 
@@ -7,13 +6,14 @@ local path_utilities = require "lib.path_utilities"
 
 local instance_configs = {
 	radar_config = {
-		designated_ship_id = "4",
+		designated_ship_id = "14",
 		designated_player_name="PHO",
 		ship_id_whitelist={},
 		player_name_whitelist={},
 	},
 	ship_constants_config = {
-		DRONE_ID = 202,
+		--DRONE_ID = 202,
+		DRONE_ID = ship.getId(),
 		THRUSTER_TIER = 5,
 		THRUSTER_TABLE_DIRECTORY = "./input_thruster_table/thruster_table.json",
 		PID_SETTINGS=
@@ -70,6 +70,8 @@ local instance_configs = {
 --local drone = TenThrusterTemplateVerticalCompactSP(instance_configs)
 local drone = BodySegmentDrone(instance_configs)
 
+local droneShipFrame = drone.ShipFrame
+
 local cloud_level = 240
 
 
@@ -111,4 +113,5 @@ end
 function drone:droneCustomFlightLoopBehavior()
 	setMirageCloudLevelMode(self.ShipFrame.ship_global_position.y)
 end
+
 drone:run()
