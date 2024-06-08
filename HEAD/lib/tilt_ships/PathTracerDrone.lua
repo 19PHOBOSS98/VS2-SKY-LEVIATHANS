@@ -73,7 +73,8 @@ function PathTracerDrone:run()
 	self.ShipFrame:run()
 end
 
-
+function PathTracerDrone:droneCustomFlightLoopBehavior()
+end
 
 --custom--
 
@@ -164,6 +165,8 @@ function PathTracerDrone:overrideShipFrameCustomFlightLoopBehavior()
 		end
 
 		ptd.prev_time = current_time
+
+		ptd:droneCustomFlightLoopBehavior()
 	end
 end
 
