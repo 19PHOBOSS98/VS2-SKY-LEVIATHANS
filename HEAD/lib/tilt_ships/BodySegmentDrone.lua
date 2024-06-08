@@ -81,6 +81,14 @@ function BodySegmentDrone:setGapLength(new_value)
 	self.rc_variables.gap_length = tonumber(new_value)
 end
 
+function BodySegmentDrone:addTargetSpatial(spatial)
+	--print(textutils.serialize(spatial))
+	self.saved_ship_spatials = self.saved_ship_spatials or {}
+	table.insert(self.saved_ship_spatials,1,spatial)
+end
+
+function BodySegmentDrone:droneCustomFlightLoopBehavior()
+end
 --custom--
 
 
@@ -97,6 +105,9 @@ function BodySegmentDrone:overrideShipFrameCustomProtocols()
 		end,
 		["gap_length"] = function (arguments)
 			bsd:setGapLength(arguments)
+		end,
+		["add_target_spatial"] = function (arguments)
+			bsd:addTargetSpatial(arguments)
 		end,
 		["HUSH"] = function (args) --kill command
 			self:resetRedstone()
@@ -152,16 +163,32 @@ function BodySegmentDrone:overrideShipFrameCustomFlightLoopBehavior()
 		--self:debugProbe({"debugging drone: ",self.ship_constants.DRONE_ID})
 
 		if (not self.remoteControlManager.rc_variables.run_mode) then
-			return;
+			return
 		end
 
+		if (#bsd.saved_ship_spatials < bsd.rc_variables.segment_delay) then
+			return
+		end
+
+		local spatials = bsd.saved_ship_spatials[#bsd.saved_ship_spatials]
+		if (spatials == nil) then
+			return
+		end
+		--local actual_leader_orientation = bsd:getCustomLeaderOrientation(spatials.orientation)
+		local actual_leader_orientation = spatials.orientation
+		self.target_global_position = spatials.position
+		self.target_rotation = actual_leader_orientation
+
+		while (#bsd.saved_ship_spatials>bsd.rc_variables.segment_delay) do
+			table.remove(bsd.saved_ship_spatials)
+		end
 
 		--[[
 			save leader pos&rot to queue (push idx = 1) if leader is not ocupying said pos (minimum of 5 blocks)
 			pop element in queue and set as drone pos&rot after queue list reaches delay length
 
 		]]--
-		
+		--[[
 		if(#bsd.saved_ship_spatials == 0) then
 			bsd.saved_ship_spatials = {{position=self.target_global_position,orientation=self.target_rotation}}
 		end
@@ -188,10 +215,13 @@ function BodySegmentDrone:overrideShipFrameCustomFlightLoopBehavior()
 		if (#bsd.saved_ship_spatials>bsd.rc_variables.segment_delay) then
 			table.remove(bsd.saved_ship_spatials)
 		end
+		]]--
+		bsd:droneCustomFlightLoopBehavior()
 	end
 end
 
 function BodySegmentDrone:getCustomLeaderOrientation(leader_orientation)
+	leader_orientation = quaternion.new(leader_orientation[1],leader_orientation[2],leader_orientation[3],leader_orientation[4])
 	return quaternion.fromRotation(leader_orientation:localPositiveY(),45)*leader_orientation
 end
 

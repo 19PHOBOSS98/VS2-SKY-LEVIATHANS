@@ -1,5 +1,4 @@
 --ID 16
-local TenThrusterTemplateVerticalCompactSP = require "lib.tilt_ships.TenThrusterTemplateVerticalCompactSP"
 local PathTracerDrone = require "lib.tilt_ships.PathTracerDrone"
 
 local Path = require "lib.paths.Path"
@@ -68,43 +67,49 @@ local instance_configs = {
 spline_coords = {}
 
 waypoints = {
-	-- {pos = vector.new(85,201,-196)},
-	-- {pos = vector.new(84,214,-175)},
-	-- {pos = vector.new(84,232,-154)},
-	-- {pos = vector.new(83,223,-130)},
-	-- {pos = vector.new(90,210,-94)},
-	-- {pos = vector.new(126,242,-93)},
-	-- {pos = vector.new(133,242,-85)},
-	-- {pos = vector.new(87,184,-67)},
-	-- {pos = vector.new(61,146,-71)},
-	-- {pos = vector.new(41,139,-39)},
-	-- {pos = vector.new(69,137,-45)},
-	-- {pos = vector.new(90,145,-67)},
-	-- {pos = vector.new(100,138,-86)},
-	-- {pos = vector.new(89,140,-85)},
-	-- {pos = vector.new(56,140,-86)},
+	{pos = vector.new(67,179,-227)},
+	{pos = vector.new(81,179,-225)},
+	{pos = vector.new(99,178,-221)},
+	{pos = vector.new(93,189,-211)},
+	{pos = vector.new(85,201,-196)},
+	{pos = vector.new(84,214,-175)},
+	{pos = vector.new(84,232,-154)},
+	{pos = vector.new(83,223,-130)},
+	{pos = vector.new(90,210,-94)},
+	{pos = vector.new(126,242,-93)},
+	{pos = vector.new(133,242,-85)},
+	{pos = vector.new(87,184,-67)}, -- entry
+	{pos = vector.new(61,146,-71)},
+	{pos = vector.new(42,144,-46)},
+	{pos = vector.new(69,140,-45)},
+	{pos = vector.new(90,145,-67)},
+	{pos = vector.new(100,138,-86)},
+	{pos = vector.new(89,140,-85)},
 
-	-- {pos = vector.new(33,140,-68)},
-	-- {pos = vector.new(52,154,-29)},
+	{pos = vector.new(56,140,-86)},
 
-	-- {pos = vector.new(56,140,-58)},
+	{pos = vector.new(33,140,-68)},
+	{pos = vector.new(52,154,-29)},
 
-	-- {pos = vector.new(72,158,-84)},
+	{pos = vector.new(56,140,-58)},
 
-	-- {pos = vector.new(106,152,-81)},
+	{pos = vector.new(72,158,-84)},
 
-	-- {pos = vector.new(85,145,-69)},
-	-- --{pos = vector.new(85,170,-69)},
+	{pos = vector.new(106,152,-81)},
 
-	-- {pos = vector.new(94,164,-44)},
-	-- {pos = vector.new(68,156,-35)},
-	-- {pos = vector.new(51,149,-50)},
-	-- {pos = vector.new(56,149,-73)},
-	-- {pos = vector.new(78,151,-75)},
-	-- {pos = vector.new(85,157,-64)},
-	-- {pos = vector.new(77,171,-51)},
-	-- {pos = vector.new(70,189,-51)},
-	-- {pos = vector.new(70,288,-51)},
+	{pos = vector.new(85,150,-69)}, -- attack
+
+
+	{pos = vector.new(104,157,-47)},
+
+	{pos = vector.new(68,156,-35)},
+	{pos = vector.new(51,149,-50)},
+	{pos = vector.new(56,149,-73)},
+	{pos = vector.new(78,151,-75)},
+	{pos = vector.new(85,157,-64)},
+	{pos = vector.new(74,171,-56)},
+	{pos = vector.new(70,189,-51)},
+	{pos = vector.new(70,288,-51)},
 }
 
 local h = path_utilities.generateHelix(50,0,1,30)
@@ -113,21 +118,21 @@ local h = path_utilities.generateHelix(50,0,1,30)
 path_utilities.rotateCoordsByAxis(h,vector.new(1,0,0),90)
 
 path_utilities.recenterStartToOrigin(h)
-path_utilities.offsetCoords(h,vector.new(50,-33,-48))
+path_utilities.offsetCoords(h,vector.new(113,230,-44))
 --waypoints = {}
 local waypoint_length = #waypoints
 for i,coord in ipairs(h) do
-	waypoints[i+waypoint_length] = {pos = coord}
+	--waypoints[i+waypoint_length] = {pos = coord}
 end
 
 if (#waypoints>3) then
 	local loop_path = true
 	local ship_path = Path(waypoints,loop_path)
-	spline_coords = ship_path:getNormalizedCoordsWithGradientsAndNormals(0.7,loop_path)
+	spline_coords = ship_path:getNormalizedCoordsWithGradientsAndNormals(0.3,loop_path)
 end
 
 instance_configs.path_tracer_custom_config.SPLINE_COORDS = spline_coords
-instance_configs.path_tracer_custom_config.STEP_SPEED = 0.08
+instance_configs.path_tracer_custom_config.STEP_SPEED = 0.03
 
 --local drone = TenThrusterTemplateVerticalCompactSP(instance_configs)
 local drone = PathTracerDrone(instance_configs)
@@ -154,12 +159,12 @@ function setMirageCloudLevelMode(current_ship_altitude)
 	end
 
 	if(current_ship_altitude <= cloud_level) then
-		redstone.setOutput("left",rs)
-		redstone.setOutput("right",false)
+		redstone.setOutput("front",rs)
+		redstone.setOutput("back",false)
 		current_state = true
 	else
-		redstone.setOutput("left",false)
-		redstone.setOutput("right",rs)
+		redstone.setOutput("front",false)
+		redstone.setOutput("back",rs)
 		current_state = false
 	end
 
@@ -171,8 +176,42 @@ function setMirageCloudLevelMode(current_ship_altitude)
 	end
 end
 
+local droneShipFrame = drone.ShipFrame
+
+local DRONE_IDs = {
+	"16",
+	"29",
+	"37",
+	"30",
+	"31",
+	"32",
+	"33",
+	"34",
+	"35",
+	"36",
+}
+
+function transmit(cmd,args,drone_id)
+	droneShipFrame.modem.transmit(droneShipFrame.com_channels.REMOTE_TO_DRONE_CHANNEL, droneShipFrame.com_channels.REPLY_DUMP_CHANNEL,
+	{drone_id=drone_id,msg={cmd=cmd,args=args}})
+end
+
+function sendCurrentTargetSpatialsToSegments()
+	local spatial = {position=droneShipFrame.ship_global_position,orientation=droneShipFrame.target_rotation}
+	for i, id in ipairs(DRONE_IDs) do
+		transmit("add_target_spatial",spatial,id)
+	end
+end
+
+local prev_tracker_idx = 0
 function drone:droneCustomFlightLoopBehavior()
-	setMirageCloudLevelMode(self.ShipFrame.ship_global_position.y)
+	setMirageCloudLevelMode(droneShipFrame.ship_global_position.y)
+	
+	local current_tracker_idx = self.tracker:getCurrentIndex()
+	if(prev_tracker_idx ~= current_tracker_idx) then
+		sendCurrentTargetSpatialsToSegments()
+		prev_tracker_idx = current_tracker_idx
+	end
 end
 
 drone:run()
