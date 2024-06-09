@@ -1,7 +1,7 @@
 activeLow:true,
 files:[wm_wing_seg1_012],
-move:[-1,0,5],
+move:[-1,0,20],
 pScale:[1,1,1],
-pMove:[0,8,0],
+pMove:[0,23,0],
 pRotatePivot:[0.5,0.5,0.5],
 pRotate:[90,0,-45]
