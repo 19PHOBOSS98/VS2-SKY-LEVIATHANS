@@ -1,8 +1,78 @@
 --ID 16
 local PathTracerDrone = require "lib.tilt_ships.PathTracerDrone"
-
 local Path = require "lib.paths.Path"
 local path_utilities = require "lib.path_utilities"
+
+local ALTITUDE_THRESHOLD = 240
+
+local DRONE_IDs = {
+	"16",
+	"29",
+	"37",
+	"30",
+	"31",
+	"32",
+	"33",
+	"34",
+	"35",
+	"36",
+}
+--[[REMEMBER THESE ARE IN WORLD COORDINATES]]--
+local WAYPOINTS = {
+	{pos = vector.new(67,179,-227)},
+	{pos = vector.new(81,179,-225)},
+	{pos = vector.new(99,178,-221)},
+	{pos = vector.new(93,189,-211)},
+	{pos = vector.new(85,201,-196)},
+	{pos = vector.new(84,214,-175)},
+	{pos = vector.new(84,232,-154)},
+	{pos = vector.new(83,223,-130)},
+	{pos = vector.new(90,210,-94)},
+	{pos = vector.new(126,242,-93)},
+	{pos = vector.new(133,242,-85)},
+	{pos = vector.new(87,184,-67)}, -- entry
+	{pos = vector.new(61,146,-71)},
+	{pos = vector.new(42,144,-46)},
+	{pos = vector.new(69,140,-45)},
+	{pos = vector.new(90,145,-67)},
+	{pos = vector.new(100,138,-86)},
+	{pos = vector.new(89,140,-85)},
+
+	{pos = vector.new(56,140,-86)},
+
+	{pos = vector.new(33,140,-68)},
+	{pos = vector.new(52,154,-29)},
+
+	{pos = vector.new(56,140,-58)},
+
+	{pos = vector.new(72,158,-84)},
+
+	{pos = vector.new(106,152,-81)},
+
+	{pos = vector.new(85,150,-69)}, -- attack
+
+
+	{pos = vector.new(104,157,-47)},
+
+	{pos = vector.new(68,156,-35)},
+	{pos = vector.new(51,149,-50)},
+	{pos = vector.new(56,149,-73)},
+	{pos = vector.new(78,151,-75)},
+	{pos = vector.new(85,157,-64)},
+	{pos = vector.new(74,171,-56)},
+	{pos = vector.new(70,189,-51)},
+	{pos = vector.new(70,288,-51)},
+}
+
+--[[ generates Helix Path
+local helix_path = path_utilities.generateHelix(50,0,1,30) --generates coordinate list of spiral
+path_utilities.rotateCoordsByAxis(helix_path,vector.new(1,0,0),90) --rotates list of coordinates by axis
+path_utilities.recenterStartToOrigin(helix_path) --recenters list of coordinates to start at (0,0,0)
+path_utilities.offsetCoords(helix_path,vector.new(113,230,-44)) --moves list of coordinates
+local waypoint_length = #WAYPOINTS
+for i,coord in ipairs(helix_path) do --adds helix coordinates to end of WAYPOINTS
+	WAYPOINTS[i+waypoint_length] = {pos = coord}
+end]]--
 
 local instance_configs = {
 	radar_config = {
@@ -66,79 +136,17 @@ local instance_configs = {
 }
 spline_coords = {}
 
-waypoints = {
-	{pos = vector.new(67,179,-227)},
-	{pos = vector.new(81,179,-225)},
-	{pos = vector.new(99,178,-221)},
-	{pos = vector.new(93,189,-211)},
-	{pos = vector.new(85,201,-196)},
-	{pos = vector.new(84,214,-175)},
-	{pos = vector.new(84,232,-154)},
-	{pos = vector.new(83,223,-130)},
-	{pos = vector.new(90,210,-94)},
-	{pos = vector.new(126,242,-93)},
-	{pos = vector.new(133,242,-85)},
-	{pos = vector.new(87,184,-67)}, -- entry
-	{pos = vector.new(61,146,-71)},
-	{pos = vector.new(42,144,-46)},
-	{pos = vector.new(69,140,-45)},
-	{pos = vector.new(90,145,-67)},
-	{pos = vector.new(100,138,-86)},
-	{pos = vector.new(89,140,-85)},
-
-	{pos = vector.new(56,140,-86)},
-
-	{pos = vector.new(33,140,-68)},
-	{pos = vector.new(52,154,-29)},
-
-	{pos = vector.new(56,140,-58)},
-
-	{pos = vector.new(72,158,-84)},
-
-	{pos = vector.new(106,152,-81)},
-
-	{pos = vector.new(85,150,-69)}, -- attack
-
-
-	{pos = vector.new(104,157,-47)},
-
-	{pos = vector.new(68,156,-35)},
-	{pos = vector.new(51,149,-50)},
-	{pos = vector.new(56,149,-73)},
-	{pos = vector.new(78,151,-75)},
-	{pos = vector.new(85,157,-64)},
-	{pos = vector.new(74,171,-56)},
-	{pos = vector.new(70,189,-51)},
-	{pos = vector.new(70,288,-51)},
-}
-
-local h = path_utilities.generateHelix(50,0,1,30)
-
---path_utilities.rotateCoords(h,quaternion.fromRotation(vector.new(0,0,1), 90))
-path_utilities.rotateCoordsByAxis(h,vector.new(1,0,0),90)
-
-path_utilities.recenterStartToOrigin(h)
-path_utilities.offsetCoords(h,vector.new(113,230,-44))
---waypoints = {}
-local waypoint_length = #waypoints
-for i,coord in ipairs(h) do
-	--waypoints[i+waypoint_length] = {pos = coord}
-end
-
-if (#waypoints>3) then
+if (#WAYPOINTS>3) then
 	local loop_path = true
-	local ship_path = Path(waypoints,loop_path)
+	local ship_path = Path(WAYPOINTS,loop_path)
 	spline_coords = ship_path:getNormalizedCoordsWithGradientsAndNormals(0.3,loop_path)
 end
 
 instance_configs.path_tracer_custom_config.SPLINE_COORDS = spline_coords
 instance_configs.path_tracer_custom_config.STEP_SPEED = 0.03
 
---local drone = TenThrusterTemplateVerticalCompactSP(instance_configs)
-local drone = PathTracerDrone(instance_configs)
---local drone = TenThrusterTemplateHorizontalCompactSP(instance_configs)
 
-local cloud_level = 240
+local drone = PathTracerDrone(instance_configs)
 
 
 local timer_delay = 0.1 --seconds
@@ -150,7 +158,7 @@ local current_state = false
 local prev_state = current_state
 
 --switches HammerHead Mirage frame depending on ship altitude
-function setMirageCloudLevelMode(current_ship_altitude)
+function setMirageByAltitude(current_ship_altitude)
 	local rs = false
 	if(count_down > 0) then
 		rs = true
@@ -158,7 +166,7 @@ function setMirageCloudLevelMode(current_ship_altitude)
 		rs = false
 	end
 
-	if(current_ship_altitude <= cloud_level) then
+	if(current_ship_altitude <= ALTITUDE_THRESHOLD) then
 		redstone.setOutput("front",rs)
 		redstone.setOutput("back",false)
 		current_state = true
@@ -178,19 +186,6 @@ end
 
 local droneShipFrame = drone.ShipFrame
 
-local DRONE_IDs = {
-	"16",
-	"29",
-	"37",
-	"30",
-	"31",
-	"32",
-	"33",
-	"34",
-	"35",
-	"36",
-}
-
 function transmit(cmd,args,drone_id)
 	droneShipFrame.modem.transmit(droneShipFrame.com_channels.REMOTE_TO_DRONE_CHANNEL, droneShipFrame.com_channels.REPLY_DUMP_CHANNEL,
 	{drone_id=drone_id,msg={cmd=cmd,args=args}})
@@ -205,7 +200,7 @@ end
 
 local prev_tracker_idx = 0
 function drone:droneCustomFlightLoopBehavior()
-	setMirageCloudLevelMode(droneShipFrame.ship_global_position.y)
+	setMirageByAltitude(droneShipFrame.ship_global_position.y)
 	
 	local current_tracker_idx = self.tracker:getCurrentIndex()
 	if(prev_tracker_idx ~= current_tracker_idx) then

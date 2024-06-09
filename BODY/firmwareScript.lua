@@ -1,12 +1,15 @@
+--ID 29
 local TenThrusterTemplateVerticalCompactSP = require "lib.tilt_ships.TenThrusterTemplateVerticalCompactSP"
 local BodySegmentDrone = require "lib.tilt_ships.BodySegmentDrone"
 
 local Path = require "lib.paths.Path"
 local path_utilities = require "lib.path_utilities"
 
+local ALTITUDE_THRESHOLD = 240
+
 local instance_configs = {
 	radar_config = {
-		designated_ship_id = "14",
+		designated_ship_id = "16",
 		designated_player_name="PHO",
 		ship_id_whitelist={},
 		player_name_whitelist={},
@@ -72,9 +75,6 @@ local drone = BodySegmentDrone(instance_configs)
 
 local droneShipFrame = drone.ShipFrame
 
-local cloud_level = 240
-
-
 local timer_delay = 0.1 --seconds
 
 local count_down = timer_delay
@@ -84,7 +84,7 @@ local current_state = false
 local prev_state = current_state
 
 --switches HammerHead Mirage frame depending on ship altitude
-function setMirageCloudLevelMode(current_ship_altitude)
+function setMirageByAltitude(current_ship_altitude)
 	local rs = false
 	if(count_down > 0) then
 		rs = true
@@ -92,13 +92,13 @@ function setMirageCloudLevelMode(current_ship_altitude)
 		rs = false
 	end
 
-	if(current_ship_altitude <= cloud_level) then
-		redstone.setOutput("left",rs)
-		redstone.setOutput("right",false)
+	if(current_ship_altitude <= ALTITUDE_THRESHOLD) then
+		redstone.setOutput("front",rs)
+		redstone.setOutput("back",false)
 		current_state = true
 	else
-		redstone.setOutput("left",false)
-		redstone.setOutput("right",rs)
+		redstone.setOutput("front",false)
+		redstone.setOutput("back",rs)
 		current_state = false
 	end
 
@@ -111,7 +111,7 @@ function setMirageCloudLevelMode(current_ship_altitude)
 end
 
 function drone:droneCustomFlightLoopBehavior()
-	setMirageCloudLevelMode(self.ShipFrame.ship_global_position.y)
+	setMirageByAltitude(self.ShipFrame.ship_global_position.y)
 end
 
 drone:run()
