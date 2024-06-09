@@ -1,6 +1,6 @@
 activeLow:true,
 files:[wm_tail],
-move:[-4,0,10],
+move:[-4,0,11],
 pScale:[1,1,1],
 pMove:[-1.05,15,-1.05],
 pRotatePivot:[0.5,0.5,0.5],
