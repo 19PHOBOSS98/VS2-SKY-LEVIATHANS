@@ -2,6 +2,6 @@ activeLow:true,
 files:[wm_wing_seg3_002],
 move:[-1,0,5],
 pScale:[1,1,1],
-pMove:[0,7,0],
+pMove:[0,6.57,0],
 pRotatePivot:[0.5,0.5,0.5],
 pRotate:[90,0,-45]
