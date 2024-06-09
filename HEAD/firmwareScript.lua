@@ -51,17 +51,19 @@ local WAYPOINTS = {
 
 	{pos = vector.new(85,150,-69)}, -- attack
 
+	{pos = vector.new(107,157,-60)},
 
 	{pos = vector.new(104,157,-47)},
 
-	{pos = vector.new(68,156,-35)},
-	{pos = vector.new(51,149,-50)},
-	{pos = vector.new(56,149,-73)},
-	{pos = vector.new(78,151,-75)},
-	{pos = vector.new(85,157,-64)},
-	{pos = vector.new(74,171,-56)},
-	{pos = vector.new(70,189,-51)},
-	{pos = vector.new(70,288,-51)},
+	{pos = vector.new(86,156,-10)},
+	{pos = vector.new(62,156,-7)},
+	{pos = vector.new(37,149,-37)},
+	{pos = vector.new(38,149,-75)},
+	{pos = vector.new(82,151,-84)},
+
+	{pos = vector.new(85,157,-64)}, -- up
+	{pos = vector.new(88,171,-55)},
+	{pos = vector.new(79,233,-60)},
 }
 
 --[[ generates Helix Path
