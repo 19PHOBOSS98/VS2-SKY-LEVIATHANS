@@ -19,8 +19,17 @@
 -- 	else
 -- 		print("install side components (radar and goggle_port blocks)...")
 -- 	end
--- 	os.sleep(1)
--- end
+-- 	local radar = { peripheral.find("sp_radar") }
+--  if (#radar>0) then
+-- 	    print("starting...")
+--  	print("ship ID:",ship.getId()," starting ...")
+-- 	    shell.run("firmwareScript.lua")
+-- 	    break
+--  else
+-- 	    print("install side components (radar block)...")
+--  end
+--      os.sleep(1)
+--  end
 
 print("ship ID:",ship.getId()," starting ...")
 shell.run("firmwareScript.lua")
