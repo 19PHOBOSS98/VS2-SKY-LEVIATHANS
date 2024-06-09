@@ -21,7 +21,8 @@ while true do
 	end]]--
 	local radar = { peripheral.find("sp_radar") }
 	if (#radar>0) then
-		print("Ship ID:",ship.getId()," starting ...")
+		print("starting...")
+		print("ship ID:",ship.getId()," starting ...")
 		shell.run("firmwareScript.lua")
 		break
 	else
