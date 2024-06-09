@@ -174,19 +174,16 @@ function BodySegmentDrone:overrideShipFrameCustomFlightLoopBehavior()
 		if (spatials == nil) then
 			return
 		end
-		--local actual_leader_orientation = bsd:getCustomLeaderOrientation(spatials.orientation)
-		local actual_leader_orientation = spatials.orientation
+
 		self.target_global_position = spatials.position
-		self.target_rotation = actual_leader_orientation
+		self.target_rotation = spatials.orientation
 
 		while (#bsd.saved_ship_spatials>bsd.rc_variables.segment_delay) do
 			table.remove(bsd.saved_ship_spatials)
 		end
 
 		--[[
-			save leader pos&rot to queue (push idx = 1) if leader is not ocupying said pos (minimum of 5 blocks)
-			pop element in queue and set as drone pos&rot after queue list reaches delay length
-
+			BodySegmentDrone now listens to the head drone's target spatials over rednet for more precise flight.
 		]]--
 		--[[
 		if(#bsd.saved_ship_spatials == 0) then
