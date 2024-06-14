@@ -118,6 +118,12 @@ function PathTracerDrone:overrideShipFrameGetCustomSettings()
 	end
 end
 
+function PathTracerDrone:customOrientationOnFlightPath(tangent,normal,target_rotatoion)
+	--target_rotatoion = quaternion.fromToRotation(target_rotatoion:localPositiveZ(), normal)*target_rotatoion --orients dorsal to the normal of the curve
+	target_rotatoion = quaternion.fromToRotation(target_rotatoion:localPositiveZ(), vector.new(0,1,0))*target_rotatoion --dorsal
+	target_rotatoion = quaternion.fromToRotation(target_rotatoion:localPositiveY(), tangent)*target_rotatoion --nose
+	return target_rotatoion
+end
 
 function PathTracerDrone:overrideShipFrameCustomFlightLoopBehavior()
 	local ptd = self
@@ -147,9 +153,8 @@ function PathTracerDrone:overrideShipFrameCustomFlightLoopBehavior()
 		local normal = ptd.SPLINE_COORDS[ptd.tracker:getCurrentIndex()].normal
 
 		--rotation
-		--self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveX(), normal)*self.target_rotation
-		self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveZ(), vector.new(0,1,0))*self.target_rotation
-		self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveY(), tangent)*self.target_rotation
+		self.target_rotation = ptd:customOrientationOnFlightPath(tangent,normal,self.target_rotation)
+		
 		
 		--position
 		self.target_global_position = ptd.SPLINE_COORDS[ptd.tracker:getCurrentIndex()].pos
