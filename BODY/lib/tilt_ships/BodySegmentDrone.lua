@@ -142,7 +142,7 @@ end
 function BodySegmentDrone:overrideShipFrameCustomPreFlightLoopBehavior()
 	local bsd = self
 	function self.ShipFrame:customPreFlightLoopBehavior()
-		bsd.saved_ship_spatials = {{position=self.target_global_position,orientation=self.target_rotation}}
+		bsd.saved_ship_spatials = {{position=self.ship_global_position,orientation=self.ship_rotation}}
 	end
 end
 
