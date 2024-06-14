@@ -239,7 +239,7 @@ function transmit(cmd,args,drone_id)
 end
 
 function sendCurrentTargetSpatialsToSegments()
-	local spatial = {position=droneShipFrame.ship_global_position,orientation=droneShipFrame.target_rotation}
+	local spatial = {position=droneShipFrame.target_global_position,orientation=droneShipFrame.target_rotation}
 	for i, id in ipairs(DRONE_IDs) do
 		transmit("add_target_spatial",spatial,id)
 	end
