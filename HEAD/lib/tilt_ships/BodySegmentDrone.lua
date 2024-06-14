@@ -161,7 +161,7 @@ function BodySegmentDrone:overrideShipFrameCustomFlightLoopBehavior()
 		--term.setCursorPos(1,1)
 				
 		--self:debugProbe({"debugging drone: ",self.ship_constants.DRONE_ID})
-
+		bsd:droneCustomFlightLoopBehavior()
 		if (not self.remoteControlManager.rc_variables.run_mode) then
 			return
 		end
@@ -181,7 +181,7 @@ function BodySegmentDrone:overrideShipFrameCustomFlightLoopBehavior()
 		while (#bsd.saved_ship_spatials>bsd.rc_variables.segment_delay) do
 			table.remove(bsd.saved_ship_spatials)
 		end
-
+		
 		--[[
 			BodySegmentDrone now listens to the head drone's target spatials over rednet for more precise flight.
 		]]--
@@ -213,7 +213,7 @@ function BodySegmentDrone:overrideShipFrameCustomFlightLoopBehavior()
 			table.remove(bsd.saved_ship_spatials)
 		end
 		]]--
-		bsd:droneCustomFlightLoopBehavior()
+		
 	end
 end
 
