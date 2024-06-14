@@ -1,0 +1,10 @@
+activeLow:true,
+files:[
+hh_segment_off_001
+,
+hh_segment_002
+],
+move:[10,0,0],
+pScale:[0.025,0.025,0.025],
+pMove:[-75,20,11.5],
+loop:false

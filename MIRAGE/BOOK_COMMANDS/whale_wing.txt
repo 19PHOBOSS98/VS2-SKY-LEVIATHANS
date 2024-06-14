@@ -1,0 +1,4 @@
+activeLow:true,
+files:[hh_wing_right_off_001,hh_wing_right_001],
+pScale:[0.025,0.025,0.025],
+loop:false
