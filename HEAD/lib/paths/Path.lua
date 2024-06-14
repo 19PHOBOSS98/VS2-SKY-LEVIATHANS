@@ -111,7 +111,8 @@ function Path:getFrenetFrame(t,bLooped)
 	local rotationalAxis = tangent_1:cross(tangent_2):normalize()
 	local normal = self:getSplineNormalVector(offset,bLooped)
 	
-	return {pos=pos,gradient=tangent_1,normal=normal,rotationalAxis=rotationalAxis,t=offset}
+	--return {pos=pos,gradient=tangent_1,normal=normal,rotationalAxis=rotationalAxis,t=offset}
+	return {pos=pos,gradient=tangent_1,normal=normal,rotationalAxis=rotationalAxis}
 end
 
 return Path
