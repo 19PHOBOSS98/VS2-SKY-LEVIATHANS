@@ -196,7 +196,7 @@ instance_configs.path_tracer_custom_config.STEP_SPEED = 0.03
 local drone = PathTracerDrone(instance_configs)
 
 
-local timer_delay = 0.1 --seconds
+local timer_delay = 0.05 --seconds
 
 local count_down = timer_delay
 
@@ -212,7 +212,7 @@ function setMirageByAltitude(current_ship_altitude)
 	else
 		rs = false
 	end
-
+	
 	if(current_ship_altitude <= ALTITUDE_THRESHOLD) then
 		redstone.setOutput("front",rs)
 		redstone.setOutput("back",false)

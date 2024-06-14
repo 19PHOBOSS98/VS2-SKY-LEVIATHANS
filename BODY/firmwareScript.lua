@@ -75,7 +75,7 @@ local drone = BodySegmentDrone(instance_configs)
 
 local droneShipFrame = drone.ShipFrame
 
-local timer_delay = 0.1 --seconds
+local timer_delay = 0.05 --seconds
 
 local count_down = timer_delay
 
