@@ -90,6 +90,17 @@ local WAYPOINTS = {
 	{pos = vector.new(62,220,-85)},
 	{pos = vector.new(40,215,-50)},
 	{pos = vector.new(57,209,-22)},
+
+	{pos = vector.new(78,254,-31)},--loop
+	{pos = vector.new(81,264,-94)},
+	{pos = vector.new(70,290,-67)},
+	{pos = vector.new(47,301,-41)},
+	{pos = vector.new(43,272,7)},
+	{pos = vector.new(80,241,-15)},
+	{pos = vector.new(94,225,-29)},
+	{pos = vector.new(120,265,-75)},
+	{pos = vector.new(80,246,-48)},
+
 	{pos = vector.new(95,197,-17)},
 	{pos = vector.new(100,182,-50)},
 	{pos = vector.new(81,177,-67)},
@@ -245,6 +256,7 @@ function drone:droneCustomFlightLoopBehavior()
 	end
 end
 
+--used for Cloth Whale: to make it twist as it follows the path
 function drone:customOrientationOnFlightPath(tangent,normal,target_rotatoion)
 	target_rotatoion = quaternion.fromToRotation(target_rotatoion:localPositiveZ(), normal)*target_rotatoion --orients dorsal to the normal of the curve
 	target_rotatoion = quaternion.fromToRotation(target_rotatoion:localPositiveY(), tangent)*target_rotatoion --nose
