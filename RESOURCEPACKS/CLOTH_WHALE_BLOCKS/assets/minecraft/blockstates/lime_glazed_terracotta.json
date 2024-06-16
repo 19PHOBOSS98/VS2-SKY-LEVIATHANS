@@ -1,0 +1,42 @@
+{
+  "variants": {
+    "facing=east": [
+        {
+        "model": "minecraft:block/lime_glazed_terracotta", "weight": 10000,
+        "y": 270
+        },
+        {
+          "model": "minecraft:block/gold_block", "weight": 30,
+          "y": 270
+        }
+    ],
+    "facing=north": [
+        {
+        "model": "minecraft:block/lime_glazed_terracotta", "weight": 10000,
+        "y": 180
+        },
+        {
+          "model": "minecraft:block/gold_block", "weight": 30,
+          "y": 180
+        }
+    ],
+    "facing=south": [
+      {
+        "model": "minecraft:block/lime_glazed_terracotta", "weight": 10000
+      },
+      {
+        "model": "minecraft:block/gold_block", "weight": 30
+      }
+    ],
+    "facing=west":  [
+        {
+        "model": "minecraft:block/lime_glazed_terracotta", "weight": 10000,
+        "y": 90
+        },
+        {
+          "model": "minecraft:block/gold_block", "weight": 30,
+          "y": 90
+        }
+    ]
+  }
+}
