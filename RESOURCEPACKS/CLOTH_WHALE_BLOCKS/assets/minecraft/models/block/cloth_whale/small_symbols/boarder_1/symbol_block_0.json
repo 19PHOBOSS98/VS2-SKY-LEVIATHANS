@@ -1,0 +1,50 @@
+{
+  "parent": "minecraft:block/template_glazed_terracotta",
+  "textures": {
+      "pattern": "minecraft:block/cloth_whale/on/symbols/symbols_cloth",
+      "side":"minecraft:block/cloth_whale/blank_white",
+      "cover":"minecraft:block/cloth_whale/blank_red",
+      "border": "minecraft:block/cloth_whale/on/big/pattern_0"
+  },
+  "elements": [
+      {   "from": [ 0, 0, 0 ],
+          "to": [ 4, 16, 16 ],
+          "faces": {
+              "down":  { "uv": [ 0, 0, 8, 16 ], "texture": "#border", "cullface": "down", "rotation":0 },
+              "up":    { "uv": [ 0, 0, 8, 16 ], "texture": "#border", "cullface": "up" , "rotation":0 },
+              "north": { "uv": [ 0, 0, 8, 16 ], "texture": "#border", "cullface": "north", "rotation":180  },
+              "south": { "uv": [ 0, 0, 8, 16 ], "texture": "#border", "cullface": "south", "rotation":0  },
+              "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side", "cullface": "west", "rotation":0  }
+          }
+      },
+      {   "from": [ 4, 0, 0 ],
+          "to": [ 12, 8, 16 ],
+          "faces": {
+              "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#cover", "cullface": "down", "rotation":0 },
+              "north": { "uv": [ 1.069,1.813,2.026,2.774 ], "texture": "#pattern", "cullface": "north", "rotation":0  },
+              "south": { "uv": [ 1.069,1.813,2.026,2.774 ], "texture": "#pattern", "cullface": "south", "rotation":0  }
+              
+          }
+      },
+      {   "from": [ 4, 8, 0 ],
+          "to": [ 12, 16, 16 ],
+          "faces": {
+              "up":    { "uv": [ 0, 16, 16, 0 ], "texture": "#cover", "cullface": "up" , "rotation":0 },
+              "north": { "uv": [ 9.28,10.773,10.237,11.734 ], "texture": "#pattern", "cullface": "north", "rotation":0  },
+              "south": { "uv": [ 9.28,10.773,10.237,11.734 ], "texture": "#pattern", "cullface": "south", "rotation":0  }
+              
+          }
+      },
+      {   "from": [ 12, 0, 0 ],
+          "to": [ 16, 16, 16 ],
+          "faces": {
+              "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#cover", "cullface": "down", "rotation":0 },
+              "up":    { "uv": [ 0, 16, 16, 0 ], "texture": "#cover", "cullface": "up" , "rotation":0 },
+              "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#cover", "cullface": "north", "rotation":0  },
+              "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#cover", "cullface": "south", "rotation":0  },
+              "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#cover", "cullface": "east", "rotation":0  }
+              
+          }
+      }
+  ]
+}

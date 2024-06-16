@@ -9,8 +9,8 @@
       {   "from": [ 0, 0, 0 ],
           "to": [ 16, 16, 16 ],
           "faces": {
-              "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#cover", "cullface": "down", "rotation":0 },
-              "up":    { "uv": [ 0, 16, 16, 0 ], "texture": "#cover", "cullface": "up" , "rotation":0 },
+              "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#pattern", "cullface": "down", "rotation":0 },
+              "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#pattern", "cullface": "up" , "rotation":0 },
               "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#pattern", "cullface": "north", "rotation":0  },
               "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#pattern", "cullface": "south", "rotation":180  },
               "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side", "cullface": "west", "rotation":0  },

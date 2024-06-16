@@ -1,0 +1,312 @@
+{
+  "variants": {
+    "facing=east": [
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_0", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_1", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_2", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_3", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_4", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_5", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_6", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_7", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_8", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_9", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_10", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_11", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_12", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_13", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_14", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_15", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_16", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_17", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_18", "weight": 10,
+        "y": 270
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_19", "weight": 10,
+        "y": 270
+        }
+    ],
+    "facing=north": [
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_0", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_1", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_2", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_3", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_4", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_5", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_6", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_7", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_8", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_9", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_10", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_11", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_12", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_13", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_14", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_15", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_16", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_17", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_18", "weight": 10,
+        "y": 180
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_19", "weight": 10,
+        "y": 180
+        }
+    ],
+    "facing=south": [
+      {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_0", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_1", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_2", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_3", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_4", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_5", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_6", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_7", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_8", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_9", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_10", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_11", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_12", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_13", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_14", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_15", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_16", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_17", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_18", "weight": 10
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_19", "weight": 10
+        }
+    ],
+    "facing=west":  [
+      {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_0", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_1", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_2", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_3", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_4", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_5", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_6", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_7", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_8", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_9", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_10", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_11", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_12", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_13", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_14", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_15", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_16", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_17", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_18", "weight": 10,
+        "y": 90
+        },
+        {
+        "model": "minecraft:block/cloth_whale/small_symbols/boarder_1/symbol_block_19", "weight": 10,
+        "y": 90
+        }
+    ]
+  }
+}
