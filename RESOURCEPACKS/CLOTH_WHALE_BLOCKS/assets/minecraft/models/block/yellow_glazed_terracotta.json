@@ -2,7 +2,7 @@
   "parent": "minecraft:block/template_glazed_terracotta",
   "textures": {
     "pattern": "minecraft:block/cloth_whale/off/big/pattern_0",
-    "side":"minecraft:block/gold_block",
+    "side":"minecraft:block/cloth_whale/blank_gold",
     "cover":"minecraft:block/cloth_whale/blank_red"
   },
   "elements": [

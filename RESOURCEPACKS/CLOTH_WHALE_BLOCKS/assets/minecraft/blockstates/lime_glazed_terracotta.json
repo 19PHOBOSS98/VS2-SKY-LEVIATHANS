@@ -6,7 +6,7 @@
         "y": 270
         },
         {
-          "model": "minecraft:block/gold_block", "weight": 30,
+          "model": "minecraft:block/cloth_whale/blank_gold", "weight": 30,
           "y": 270
         }
     ],
@@ -16,7 +16,7 @@
         "y": 180
         },
         {
-          "model": "minecraft:block/gold_block", "weight": 30,
+          "model": "minecraft:block/cloth_whale/blank_gold", "weight": 30,
           "y": 180
         }
     ],
@@ -25,7 +25,7 @@
         "model": "minecraft:block/lime_glazed_terracotta", "weight": 10000
       },
       {
-        "model": "minecraft:block/gold_block", "weight": 30
+        "model": "minecraft:block/cloth_whale/blank_gold", "weight": 30
       }
     ],
     "facing=west":  [
@@ -34,7 +34,7 @@
         "y": 90
         },
         {
-          "model": "minecraft:block/gold_block", "weight": 30,
+          "model": "minecraft:block/cloth_whale/blank_gold", "weight": 30,
           "y": 90
         }
     ]

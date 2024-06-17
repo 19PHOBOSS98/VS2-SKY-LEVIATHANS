@@ -29,7 +29,7 @@
           "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_8", "weight": 100, "y": 270
         },
         {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_9", "weight": 200, "y": 270
+          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_9", "weight": 100, "y": 270
         },
         {
           "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_10", "weight": 100, "y": 270
@@ -60,69 +60,117 @@
         },
         {
           "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_19", "weight": 100, "y": 270
+        },
+        {
+          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_20", "weight": 100, "y": 270
+        },
+        {
+          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_21", "weight": 100, "y": 270
+        },
+        {
+          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_22", "weight": 100, "y": 270
+        },
+        {
+          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_23", "weight": 100, "y": 270
+        },
+        {
+          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_24", "weight": 100, "y": 270
+        },
+        {
+          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_25", "weight": 100, "y": 270
+        },
+        {
+          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_26", "weight": 100, "y": 270
+        },
+        {
+          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_27", "weight": 100, "y": 270
         }
     ],
     "facing=north": [
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_0", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_1", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_2", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_3", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_4", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_5", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_6", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_7", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_8", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_9", "weight": 200, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_10", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_11", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_12", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_13", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_14", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_15", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_16", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_17", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_18", "weight": 100, "y": 180
-        },
-        {
-          "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_19", "weight": 100, "y": 180
-        }
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_0", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_1", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_2", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_3", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_4", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_5", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_6", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_7", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_8", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_9", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_10", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_11", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_12", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_13", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_14", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_15", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_16", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_17", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_18", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_19", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_20", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_21", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_22", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_23", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_24", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_25", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_26", "weight": 100, "y": 180
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_27", "weight": 100, "y": 180
+      }
     ],
     "facing=south": [
       {
@@ -153,7 +201,7 @@
         "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_8", "weight": 100
       },
       {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_9", "weight": 200
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_9", "weight": 100
       },
       {
         "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_10", "weight": 100
@@ -184,69 +232,117 @@
       },
       {
         "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_19", "weight": 100
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_20", "weight": 100
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_21", "weight": 100
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_22", "weight": 100
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_23", "weight": 100
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_24", "weight": 100
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_25", "weight": 100
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_26", "weight": 100
+      },
+      {
+        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_27", "weight": 100
       }
     ],
     "facing=west":  [
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_0", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_1", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_2", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_3", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_4", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_5", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_6", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_7", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_8", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_9", "weight": 200, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_10", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_11", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_12", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_13", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_14", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_15", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_16", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_17", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_18", "weight": 100, "y": 90
-      },
-      {
-        "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_19", "weight": 100, "y": 90
-      }
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_0", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_1", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_2", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_3", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_4", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_5", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_6", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_7", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_8", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_9", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_10", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_11", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_12", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_13", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_14", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_15", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_16", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_17", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_18", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_19", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_20", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_21", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_22", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_23", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_24", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_25", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_26", "weight": 100, "y": 90
+    },
+    {
+      "model": "minecraft:block/cloth_whale/large_symbols/symbol_block_27", "weight": 100, "y": 90
+    }
     ]
   }
 }
