@@ -1,0 +1,11 @@
+activeLow:true,
+loop:false,
+files:[
+cloth_whale_wing_segment_off_001
+,
+cloth_whale_wing_segment_on_001
+],
+move:[-24,0,-1],
+pMove:[-0.5,-17,0],
+pRotatePivot:[0.5,0.5,0.5],
+pRotate:[0,-45,0]
