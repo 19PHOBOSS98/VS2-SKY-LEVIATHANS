@@ -130,7 +130,13 @@ Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https:/
 
       I've included VS-Ship-Schematics of both my head and segment drones with their onboard Turtles.
       You can use those, tho you might need to switch the Turtles out with new ones and save them as new schematics first before you spawn more in.
-    
+
+       As a side note:
+
+      ![image](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/4fd15309-ab70-4673-8a60-7040ad987e95) 
+
+      If you ever encounter this error when spawning them in using Vmod, breaking the Turtle and putting it back should fix it.
+
  8. Boot-up the drones
 
       There's a script that should automatically start the firmware when the Turtle turns on. 
