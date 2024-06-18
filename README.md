@@ -1,5 +1,7 @@
 # VS2-SKY-WHALE
 
+[Valkyrien Skies 2](https://modrinth.com/mod/valkyrien-skies) is a Minecraft Mod that turns minecraft structures into physics objects. With it are an army of [addons](https://wiki.valkyrienskies.org/wiki/List_of_addons) that made this all possible. Visit their [discord](https://discord.gg/aWeNDCUTS6) to find out more about the mod.
+
 ## LOADING INTO THE DEMO MAPS
 1. Download and install the following maps:
 2. Initialize Leviathan Drones
@@ -37,6 +39,8 @@
 * install the included resourcepacks
 * install the included datapack
 * install the included modpack
+* add the included nbt schematic files (`VS2-SKY-WHALES\DRONE_STRUCTURE_SCHEMATICS\SCHEMATICS`,`VS2-SKY-WHALES/MIRAGE/STRUCTURE_FILES/...`) to your game's `schematics` folder
+* add the included V-Mod schematics (`VS2-SKY-WHALES\DRONE_STRUCTURE_SCHEMATICS\VMOD_SCHEMATICS`) to your game's `VMod-Schematics` folder
 * In `SAVE_FOLDER/serverconfig/some_peripherals-SERVER.toml` file, configure `SomePeripheralsConfig.RadarSettings>max_entity_search_radius & max_ship_search_radius` both to 500
 (* Incase of having too many active drones, in `SAVE_FOLDER/serverconfig/computercraft-server.toml` file, increment `computer_threads` to a higher value)
 
@@ -123,9 +127,13 @@
       
  16.  Set Head-Drone To "Walk"
 
-      In your Swarm Controller, click on your head drone's ID and toggle the `STOP` button to `WALK`. The head-drone should start "walking" thru the list of coordinates we've set.
-      
-     
+      In your Swarm Controller, click on your head drone's ID and toggle the `STOP` button to `WALK`. The head-drone should start "walking" thru the list of coordinates we've set. Toggle the button to `STOP` to... stop
+
+ 17. Set Custom Skin
+
+     The drones have onboard Mirage Projectors from a small mod I made called [Mirage](https://youtu.be/LpBEGNvNQbg). Follow this [video guide](https://youtu.be/XtJSwktTuuw?si=8fTOF-V3WfaLQDtH) to learn how to use it.
+     I've included my skins in the github repo. Copy the text files you like from `VS2-SKY-WHALES/MIRAGE/STRUCTURE_FILES/...` into a book&quill in-game and right click on the onboard Mirage Projector to set it.
+     With the nbt files properly added, It should start projecting.
 
 ### Misc Drone Settings
 
