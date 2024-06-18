@@ -39,11 +39,27 @@ Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord
 
 4. Unpause Segment-Drone (SEGMENT)
 
-   Next we need to unpause the segment-drones. We can go thru the list one by one to unpause them all but we can configure them all at once from the `ALL` tab.
+   Next we need to unpause the segment-drones. We can go thru the list one by one to unpause them all but we can configure them all at once from the `ALL` tab. Click the `ALL` button on the top left to bring up the Swarm Controls. 
 
-   Click the `ALL` button on the top left to bring up the Swarm Controls. We can switch thru the different types of drones by clicking on the Drone-Type button. It's set to `TURRET`  when you first start the program. Set it to `SEGMENT` to configure all of our segment-drones.
+   ![image](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/391d827e-6cf4-496d-bf04-0736845d41c6)
+   
+   ![2024-06-18_10 36 54](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/ae6c5b98-10f3-4472-8407-53ae1dda35c5)
 
-   Toggle the `PAUSE` button to `RUN` and click on `SetSwarm` to send the new settings to our segment-drones.
+   
+
+   We can switch thru the different types of drones by clicking on the Drone-Type button. It's set to `TURRET`  when you first start the program. Set it to `SEGMENT` to configure all of our segment-drones.
+
+   ![image](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/b8b2db83-6bfb-4ea9-a821-27efc39f570a)
+
+   ![2024-06-18_21 32 35](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/e668b30d-736d-4206-9871-4e31a335240f)
+
+
+   Toggle the `PAUSE` button to `RUN` and click on `Set Swarm` to send the new settings to our segment-drones.
+
+   ![2024-06-18_21 34 54](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/0a67768f-9d86-4418-b093-ae998fd0df69)
+
+   ![image](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/731a96ca-d079-4eaf-8ba1-5b22f1dbb31e)
+
 
    Segment-drones only move when the head-drone is "walking" 
    
