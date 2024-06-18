@@ -36,8 +36,21 @@
 ### Before Loading Into the World
 * install the included resourcepacks
 * install the included datapack
+* install the included modpack
 * In `SAVE_FOLDER/serverconfig/some_peripherals-SERVER.toml` file, configure `SomePeripheralsConfig.RadarSettings>max_entity_search_radius & max_ship_search_radius` both to 500
-* 
+(* Incase of having too many active drones, in `SAVE_FOLDER/serverconfig/computercraft-server.toml` file, increment `computer_threads` to a higher value)
+
+### Setting Lua Scripts
+   #### Swarm Controller
+   #### Debugger
+   #### Head-Drone
+   #### Segment-Drone
+
+### Spawning Drones
+
+### Configure Drone Settings
+
+
 
 VIDEO_HERE
 
