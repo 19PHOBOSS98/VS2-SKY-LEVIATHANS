@@ -33,18 +33,27 @@
 
 ## HOW TO SETUP A CUSTOM LEVIATHAN DRONE SWARM
 
-### Before Loading Into the World
+### Before Loading Into The World
 * install the included resourcepacks
 * install the included datapack
 * install the included modpack
 * In `SAVE_FOLDER/serverconfig/some_peripherals-SERVER.toml` file, configure `SomePeripheralsConfig.RadarSettings>max_entity_search_radius & max_ship_search_radius` both to 500
 (* Incase of having too many active drones, in `SAVE_FOLDER/serverconfig/computercraft-server.toml` file, increment `computer_threads` to a higher value)
 
+### After Loading Into The World
+ 1. Ready two ComputerCraft:Pocket-Computers to use as your Swarm Controller and Debugger tablets.
+ 2. Ready ComputerCraft:Turtles with Ender Modems. These will be our drone pilots.
+    Each new CC:Turtle you put down has a unique Computer-ID. This points the turtle to a folder: `WORLD_SAVE/computercraft/computer/[COMPUTER_ID_HERE]` where all it's Lua scripts are saved
+
+    In Creative, you can copy-paste a CC:Turtle (CTRL+SHIFT+MIDDLE-CLICK on block) to have multiple Turtles with the same Computer-ID. Each of those Turtles would be pointing to the same Computer Folder. This makes it easier to setup new drones without copy pasting more code. However, you can't typically copy-paste like this in Survival. In that case you need to copy-paste the code to new `computer` folders each time you add a new drone to the world.
+    
+ 4. 
+ 5. 
+
+
 ### Setting Lua Scripts
-   #### Swarm Controller
-   #### Debugger
-   #### Head-Drone
-   #### Segment-Drone
+   In-game, grab yourself .
+   
 
 ### Spawning Drones
 
