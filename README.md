@@ -105,6 +105,8 @@ Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord
  
  7. In-game, build the Omni-Drones (formerly known as Tilt-Ships) using the provided structure files
 
+      ![2024-06-18_21 55 21](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6148bab8-46aa-45f4-a368-4e712c577c59)
+      
       Make sure to not rotate the structure. Build it as it is.
       
       You can use Create:Schematics to spawn the structure in and turn them into ships using Valkyrien Skies 2 Eureka:Helms or any of the VS2 addons.
@@ -148,12 +150,20 @@ Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord
 
  10. Set Flight Path
 
-     The head-drone is a `PathTracerDrone`. You give it a set of waypoints and it will trace it in the sky. Go to your head-drone's `firmwareScript.lua` file and edit the `WAYPOINTS` variable. It needs atleast 4 points to start moving.
-     Keep in mind that these coordinates need to be in world space. You can use my [Pathing Library](https://github.com/19PHOBOSS98/Lua-Computercraft-Spline-Path-Library/tree/main) to generate Smooth Curving paths, just make sure to `offset` them to the right world coordinates before flying your drones.
+      The head-drone is a `PathTracerDrone`. You give it a set of waypoints and it will trace it in the sky. Go to your head-drone's `firmwareScript.lua` file and edit the `WAYPOINTS` variable. It needs atleast 4 points to start moving.
+      Keep in mind that these coordinates need to be in world space. 
+
+      ![Snapshot_4](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/ce0d254b-10fb-465e-90d3-6142e391f3fa)
+      [YT VIDEO](https://youtu.be/F2cJSpcBj5I?si=zi9aD3y2DP8JqT_W)
+      
+      You can use my [Pathing Library](https://github.com/19PHOBOSS98/Lua-Computercraft-Spline-Path-Library/tree/main) to generate Smooth Curving paths, just make sure to `offset` them to the right world coordinates before flying your drones.
       
  11. Set SEGMENT_DELAY
 
       Each of the drones are set to follow each other on a set distance. Edit the `debugger_leviathan.lua` script and set the `SEGMENT_DELAY` variable to adjust the gap between the drones.
+
+      ![image](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/448efecf-dd4d-480c-a75c-6bacf8ce9f49)
+
 
  12. Run Debugger
 
@@ -166,9 +176,9 @@ Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord
      You can configure each of the drones individually by clicking on one of their IDs on the list on the left side of the screen.
 
      You can configure multiple drones of the same tpye all at once by clicking on `ALL`.
-     We can switch thru the different types of drones by clicking on the Drone-Type button. It should be set to `TURRET` when you first start the program. On text (String) inputs don't forget to press `Enter` to lock in the new setting.
+     We can switch thru the different types of drones by clicking on the Drone-Type button. It's set to `TURRET` when you first start the program.
      
-     When you're done with the changes, click on `SetSwarm` to send the new settings to the drones.
+     When you're done with the changes, click on `Set Swarm` to send the new settings to the drones.
 
  14. Unpause Head-Drone
 
@@ -184,8 +194,20 @@ Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord
 
  17. Set Custom Skin
 
-     The drones have onboard Mirage Projectors from a small mod I made called [Mirage](https://youtu.be/LpBEGNvNQbg). Follow this [video guide](https://youtu.be/XtJSwktTuuw?si=8fTOF-V3WfaLQDtH) to learn how to use it.
-     I've included my skins in the github repo. Copy the text files you like from `VS2-SKY-WHALES/MIRAGE/STRUCTURE_FILES/...` into a book&quill in-game and right click on the onboard Mirage Projector to set it. With the nbt files properly added, It should start projecting the skin.
+      ![2024-06-18_22 08 44](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6b5293c3-6dcc-43d7-8f35-1ef0ff6bf1dc)
+      
+      Each drone has an onboard Mirage Projector from a small mod I made called [Mirage](https://youtu.be/LpBEGNvNQbg):
+      
+      ![315248505-be86255b-6c01-4f94-a4d4-bbafb35c5df4](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/edcd0f3c-0776-47a0-85c8-15dbe773b091)
+
+      Follow this [video guide](https://youtu.be/XtJSwktTuuw?si=8fTOF-V3WfaLQDtH) to learn how to use it.
+      
+      I've included my skins in the github repo:
+
+
+ Copy one of the book commands from `VS2-SKY-WHALES/MIRAGE/STRUCTURE_FILES/...` into a book&quill in-game and right click on the onboard Mirage Projector to configure it. With the right nbt files properly added, It should start projecting the skin on your drone.
+
+      ![image](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/e12720c8-c78b-4dfd-a0f5-ea23dfc1dbdd)
 
 ### Misc Drone Settings
 
