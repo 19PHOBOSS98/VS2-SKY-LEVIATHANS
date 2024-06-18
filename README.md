@@ -137,11 +137,15 @@ Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord
       Each drone has a unique ship-ID. You can view this by right-clicking on their turtles when they start-up for the first time.
       Take note of each of your drone's ID.
       
+      ![image](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/47686eac-6da0-44a0-ae37-12839ff6af88)
+
       We need to edit the following Lua scripts and set each of their `DRONE_IDs` list:
         * Swarm Controller Tablet > `swarm_controller.lua`
         * Debugger Tablet > `debugger_leviathan.lua`
         * Head Drone > `firmwareScript.lua`
  
+      ![Screenshot 2024-06-18 182719](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/7de5c28d-27fb-41ac-9033-bdef0023f6a4)
+
  10. Set Flight Path
 
      The head-drone is a `PathTracerDrone`. You give it a set of waypoints and it will trace it in the sky. Go to your head-drone's `firmwareScript.lua` file and edit the `WAYPOINTS` variable. It needs atleast 4 points to start moving.
