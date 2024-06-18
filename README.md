@@ -7,7 +7,7 @@
     Once you load in to the world, you should have two Computercraft:Pocket Computers in your hotbar. The one with ID:0 is your controller and the other one with ID:1 is your debugger.
     Run `debugger_leviathan.lua` on the debugger and press 't' on your keyboard to (re)initialize the drones.
    
-4. Unpause Head-Drone (TRACER)
+3. Unpause Head-Drone (TRACER)
 
    On your controller pocket computer run `swarm_controller.lua`. The swarm controller UI should appear. You can configure each of the drones by clicking on one of their IDs on the list on the left side of the screen. The list is arranged from top to bottom starting with the head-drone (Drone ID:16).
 
@@ -16,7 +16,7 @@
    Unpause the head-drone first. Click on it's Drone ID and toggle the `PAUSE` button. The head-drone should start positioning itself to the starting position.
 
    
-5. Unpause Segment Drone (SEGMENT)
+4. Unpause Segment-Drone (SEGMENT)
 
    Next we need to unpause the segment-drones. We can go thru the list one by one to unpause them all but we can configure them all at once from the `ALL` tab.
 
@@ -26,7 +26,7 @@
 
    Segment-drones only move when the head-drone is "walking" 
    
-7. Set Head-Drone To "Walk"
+5. Set Head-Drone To "Walk"
 
    In your swarm controller, click on the head-drone from the drone list (ID:16) and toggle `STOP` to `WALK` to get it to start "walking" the flight path.
    The segment-drones will start to fly into place one by one as the head-drone moves.
@@ -51,14 +51,14 @@
       Each of those Turtles would be pointing to the same Computer Folder. This makes it easier to setup new drones without copy pasting more code.
       However, you can't typically copy-paste like this in Survival. In that case you need to copy-paste the code to new computer-folders each time you add a new drone to the world.
     
- 4. Copy the Swarm Controller Code to your Swarm Controller's computer-folder
- 5. Copy the Debugger Code to your Debugger's computer-folder
- 6. Copy the drone Code from the `HEAD` folder to your head-drone's computer-folder
- 7. Copy the drone Code from the `BODY` folder to your segment-drones' computer-folder
+ 3. Copy the Swarm Controller Code to your Swarm Controller's computer-folder
+ 4. Copy the Debugger Code to your Debugger's computer-folder
+ 5. Copy the drone Code from the `HEAD` folder to your head-drone's computer-folder
+ 6. Copy the drone Code from the `BODY` folder to your segment-drones' computer-folder
 
       Again, you need to copy it to different folders if you're in survival
  
- 9. In-game, build the Omni-Drones (formerly known as Tilt-Ships) using the provided structure files
+ 7. In-game, build the Omni-Drones (formerly known as Tilt-Ships) using the provided structure files
 
       Make sure to not rotate the structure and build it as it is.
       
@@ -72,14 +72,14 @@
       That means you can spawn multiple drones with the same computer-ID. I've included VS-Ship-Schematics of both my head and segment drones with their onboard Turtles.
       You can use those, tho you might need to switch the Turtles out with new ones and save them as new schematics first before you spawn more in.
     
- 11. Boot-up the drones
+ 8. Boot-up the drones
 
      There's a script that should automatically start the firmware when the Turtle turns on. Turning the Turtle off and on again should (re)start the script.
      They should start hovering in place.
 
      The drones should automatically start right when you spawn them in using V-Mod. 
       
- 12. Setup the drone ID list
+ 9. Setup the drone ID list
 
      Each drone has a unique ship-ID. You can view this by right-clicking on their turtles when they start-up for the first time.
      Take note of each of your drone's ID.
@@ -89,20 +89,20 @@
         * Debugger Tablet > `debugger_leviathan.lua`
         * Head Drone > `firmwareScript.lua`
  
- 13. Set Flight Path
+ 10. Set Flight Path
 
      The head-drone is a `PathTracerDrone`. You give it a set of waypoints and it will trace it in the sky. Go to your head-drone's `firmwareScript.lua` file and edit the `WAYPOINTS` variable. It needs atleast 4 points to start moving.
      Keep in mind that these coordinates need to be in world space. You can use my [Pathing Library](https://github.com/19PHOBOSS98/Lua-Computercraft-Spline-Path-Library/tree/main) to generate Smooth Curving paths, just make sure to `offset` them to the right world coordinates before flying your drones.
       
- 14. Set SEGMENT_DELAY
+ 11. Set SEGMENT_DELAY
 
       Each of the drones are set to follow each other on a set distance. Edit the `debugger_leviathan.lua` script and set the `SEGMENT_DELAY` variable to adjust the gap between the drones.
 
- 15. Run Debugger
+ 12. Run Debugger
 
       In your Debugger tablet run `debugger_leviathan.lua` and press the `t` key to (re)initialize the leviathan drones with their proper settings (debugger_leviathan.lua > `SEGMENT_DELAY`)
      
- 16. Run Swarm Controller
+ 13. Run Swarm Controller
 
      In your Swarm Controller tablet run `swarm_controller.lua`. The swarm controller UI should appear.
 
@@ -113,18 +113,21 @@
      
      When you're done with the changes, click on `SetSwarm` to send the new settings to the drones.
 
- 17.  
+ 14. Unpause Head-Drone
+
+      In your Swarm Controller, click on your head drone's ID and Unpause it by toggling the `PAUSE` button to `RUN`. The head-drone should start positioning itself to the starting position.
+      
+ 15. Unpause Segment-Drones
+
+      In your Swarm Controller, click on `ALL` and switch drone-type to `SEGMENT`. Toggle the `PAUSE` button to `RUN` and click on `SetSwarm` to send the new settings to our segment-drones. The segment-drones should start moving when the head-drone starts "walking" 
+      
+ 16.  Set Head-Drone To "Walk"
+
+      In your Swarm Controller, click on your head drone's ID and toggle the `STOP` button to `WALK`. The head-drone should start "walking" thru the list of coordinates we've set.
+      
      
 
-
-
-### Setting Lua Scripts
-   In-game, grab yourself .
-   
-
-### Spawning Drones
-
-### Configure Drone Settings
+### Misc Drone Settings
 
 
 
