@@ -216,8 +216,14 @@ I used [RFTools](https://modrinth.com/mod/rftools-utility) Wireless redstone tra
 
 This is how the Cloth Whale changes skin when it ducks under the clouds:
 
+![image](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/dc70f2fd-16e6-4f49-8eda-a88ee7af457d)
+
+
 In your drone's `firmwareScript.lua` file, set the `ALTITUDE_THRESHOLD` variable to the desired block height you want it to start outputting redstone.
 
-If the ship passes it going down it should send a redstone pulse from the Turtle's back, if it passes it going up, the Turtle outputs a redstone pulse from the front.
+![image](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/ae6a86fa-e184-4fd8-844f-65d3ab8e71b2)
+
+
+If the ship passes it going down the Turtle sends a redstone pulse from its back, if the drone passes the threshold going up, the Turtle outputs a redstone pulse from the front.
 
 
