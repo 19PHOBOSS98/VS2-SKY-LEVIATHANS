@@ -41,14 +41,57 @@
 (* Incase of having too many active drones, in `SAVE_FOLDER/serverconfig/computercraft-server.toml` file, increment `computer_threads` to a higher value)
 
 ### After Loading Into The World
- 1. Ready two ComputerCraft:Pocket-Computers to use as your Swarm Controller and Debugger tablets.
- 2. Ready ComputerCraft:Turtles with Ender Modems. These will be our drone pilots.
-    Each new CC:Turtle you put down has a unique Computer-ID. This points the turtle to a folder: `WORLD_SAVE/computercraft/computer/[COMPUTER_ID_HERE]` where all it's Lua scripts are saved
-
-    In Creative, you can copy-paste a CC:Turtle (CTRL+SHIFT+MIDDLE-CLICK on block) to have multiple Turtles with the same Computer-ID. Each of those Turtles would be pointing to the same Computer Folder. This makes it easier to setup new drones without copy pasting more code. However, you can't typically copy-paste like this in Survival. In that case you need to copy-paste the code to new `computer` folders each time you add a new drone to the world.
+ 1. Ready two ComputerCraft:Pocket-Computers to use as your Swarm Controller and Debugger tablets
+ 2. Ready at least two different ComputerCraft:Turtles with Ender Modems. These will be our drone pilots
+      Each new CC:Turtle you put down has a unique Computer-ID. This points the turtle to a folder: `WORLD_SAVE/computercraft/computer/[COMPUTER_ID_HERE]` where all it's Lua scripts are saved.
+      
+      We need atleast 1 to act as our head-drone and another one as our segment-drone.   
+      
+      In Creative, you can copy-paste a CC:Turtle (CTRL+SHIFT+MIDDLE-CLICK on block) to have multiple Turtles in the world with the same Computer-ID.
+      Each of those Turtles would be pointing to the same Computer Folder. This makes it easier to setup new drones without copy pasting more code.
+      However, you can't typically copy-paste like this in Survival. In that case you need to copy-paste the code to new computer-folders each time you add a new drone to the world.
     
- 4. 
- 5. 
+ 4. Copy the Swarm Controller Code to your Swarm Controller's computer-folder
+ 5. Copy the Debugger Code to your Debugger's computer-folder
+ 6. Copy the drone Code from the `HEAD` folder to your head-drone's computer-folder
+ 7. Copy the drone Code from the `BODY` folder to your segment-drones' computer-folder
+
+      Again, you need to copy it to different folders if you're in survival
+ 
+ 9. In-game, build the Omni-Drones (formerly known as Tilt-Ships) using the provided structure files
+
+      Make sure to not rotate the structure and build it as it is.
+      
+      You can use Create:Schematics to spawn the structure in and turn them into ships using Valkyrien Skies 2 Eureka:Helms or any of the VS2 addons.
+      
+      Make sure the blocks are not touching anything else when you apply physics to the structure.
+      
+      Swap out the glass block in the middle with your CC:Turtle. Make sure, the side with the Ender Modem is not touching any of the two Redstone Integrators.
+      
+      You can also use V-Mod to spawn them in as VS2-ships directly. Note that saving a VS-ship with CC:Turtles using V-Mod also copies their Computer-IDs.
+      That means you can spawn multiple drones with the same computer-ID. I've included VS-Ship-Schematics of both my head and segment drones with their onboard Turtles.
+      You can use those, tho you might need to switch the Turtles out with new ones and save them as new schematics first before you spawn more in.
+    
+ 11. Boot-up the drones
+
+     There's a script that should automatically start the firmware when the Turtle turns on. Turning the Turtle off and on again should (re)start the script.
+     They should start hovering in place.
+
+     The drones should automatically start right when you spawn them in using V-Mod. 
+      
+ 13. Setup the drone ID list
+
+     Each drone has a unique ship-ID. You can view this by right-clicking on their turtles when they start-up for the first time.
+     Take note of each of your drone's ID.
+
+     We need to edit the following Lua scripts:
+        * Swarm Controller Tablet > `swarm_controller.lua`
+        * Debugger Tablet > `debugger_leviathan.lua`
+        * Head Drone > `firmwareScript.lua`
+      
+ 15. 
+ 16. 
+ 17. 
 
 
 ### Setting Lua Scripts
