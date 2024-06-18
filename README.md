@@ -1,6 +1,6 @@
 # VS2-SKY-WHALE
 
-## HOW TO SETUP DEMO MAPS
+## LOADING INTO THE DEMO MAPS
 1. Download and install the following maps:
 2. Initialize Leviathan Drones
    
@@ -9,7 +9,7 @@
    
 4. "Run" Drone Segments
 
-   On your controller pocket computer run `swarm_controller.lua`.
+   On your controller pocket computer run `swarm_controller.lua`. The swarm controller UI should appear. You can configure each of the drone by clicking on one of their IDs on the list on the left side of the screen. 
    
 6. 
 
