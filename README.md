@@ -9,6 +9,12 @@ Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https:/
    
    [DOWNLOAD_LINKS_HERE]
 
+   Recommended shaders: BSL 8.2.04
+
+   Recommended shaders: Bliss-Shader-main_2
+
+   Recommended shaders: ComplementaryUnbound_35.1.1
+
 2. Initialize Leviathan Drones
    
     Once you load in to the world, you should have two Computercraft:Pocket Computers in your hotbar. The one with ID:0 is your controller and the other one with ID:1 is your debugger. Run `debugger_leviathan.lua` on the debugger and press 't' on your keyboard to (re)initialize the drones.
@@ -77,6 +83,7 @@ Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https:/
 * install the included resourcepacks
 * install the included datapack
 * install the included modpack
+* install the included shaderpack
 * add the included nbt schematic files to your game's `schematics` folder:
       `VS2-SKY-WHALES\DRONE_STRUCTURE_SCHEMATICS\SCHEMATICS\...`
       `VS2-SKY-WHALES\MIRAGE\STRUCTURE_FILES\...`
@@ -204,7 +211,6 @@ Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https:/
       
       I've included my skins in the github repo:
 
-      
 
       Copy one of the book commands from `VS2-SKY-WHALES/MIRAGE/STRUCTURE_FILES/...` into a book&quill in-game and right click on the onboard Mirage Projector to configure it. With the right nbt files properly added, It should start projecting the skin on your drone.
 
