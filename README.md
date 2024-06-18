@@ -1,23 +1,42 @@
 # VS2-SKY-WHALE
 
-[Valkyrien Skies 2](https://modrinth.com/mod/valkyrien-skies) is a Minecraft Mod that turns minecraft structures into physics objects. With it are an army of [addons](https://wiki.valkyrienskies.org/wiki/List_of_addons) that add stuff to make them fly. Coupled with [ComputerCraft](https://modrinth.com/mod/cc-tweaked) Visit their [discord](https://discord.gg/aWeNDCUTS6) to find out more about the mod.
+[Valkyrien Skies 2](https://modrinth.com/mod/valkyrien-skies) is a Minecraft Mod that turns minecraft structures into physics objects. With it are an army of [addons](https://wiki.valkyrienskies.org/wiki/List_of_addons) that add stuff to make them fly. Coupled with [ComputerCraft](https://modrinth.com/mod/cc-tweaked) we can achieve omnidirectional flight. 
+
+Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord.gg/dRTtrdK)) to find out more.
 
 ## LOADING INTO THE DEMO MAPS
 1. Download and install the following maps:
+   
+   [DOWNLOAD_LINKS_HERE]
+
 2. Initialize Leviathan Drones
    
-    Once you load in to the world, you should have two Computercraft:Pocket Computers in your hotbar. The one with ID:0 is your controller and the other one with ID:1 is your debugger.
-    Run `debugger_leviathan.lua` on the debugger and press 't' on your keyboard to (re)initialize the drones.
+    Once you load in to the world, you should have two Computercraft:Pocket Computers in your hotbar. The one with ID:0 is your controller and the other one with ID:1 is your debugger. Run `debugger_leviathan.lua` on the debugger and press 't' on your keyboard to (re)initialize the drones.
+
+   ![2024-06-18_10 32 19](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/1a546294-1d01-4d08-86a6-02f1ad590003)
+
+
+   ![2024-06-18_10 33 54](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/1270e333-9bbd-4672-ac33-63d04efa06d9)
+
    
+   ![2024-06-18_10 36 42](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/13008e87-d190-46aa-8998-305fb85e2eb6)
+
 3. Unpause Head-Drone (TRACER)
 
    On your controller pocket computer run `swarm_controller.lua`. The swarm controller UI should appear. You can configure each of the drones by clicking on one of their IDs on the list on the left side of the screen. The list is arranged from top to bottom starting with the head-drone (Drone ID:16).
+
+  ![2024-06-18_10 36 54](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/f1fd1735-6444-4f88-8a8a-6de9ad23b583)
 
    All drones are paused by default. We need to set them to `RUN` to get them to move.
 
    Unpause the head-drone first. Click on it's Drone ID and toggle the `PAUSE` button. The head-drone should start positioning itself to the starting position.
 
-   
+   ![image](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/ce1eb8f7-fa79-495f-ab03-be6fb0bd20c6)
+
+   ![2024-06-18_21 27 07](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/63861208-a9b3-44c1-8bef-ee0d5b08ef8d)
+
+   ![2024-06-18_21 29 17](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/eeac140c-be0c-4d48-8d22-d0dc669c6875)
+
 4. Unpause Segment-Drone (SEGMENT)
 
    Next we need to unpause the segment-drones. We can go thru the list one by one to unpause them all but we can configure them all at once from the `ALL` tab.
