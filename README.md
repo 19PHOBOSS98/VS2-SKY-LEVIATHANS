@@ -105,31 +105,39 @@ Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord
  
  7. In-game, build the Omni-Drones (formerly known as Tilt-Ships) using the provided structure files
 
-      Make sure to not rotate the structure and build it as it is.
+      Make sure to not rotate the structure. Build it as it is.
       
       You can use Create:Schematics to spawn the structure in and turn them into ships using Valkyrien Skies 2 Eureka:Helms or any of the VS2 addons.
       
       Make sure the blocks are not touching anything else when you apply physics to the structure.
       
-      Swap out the glass block in the middle with your CC:Turtle. Make sure, the side with the Ender Modem is not touching any of the two Redstone Integrators.
+      Swap out the glass block in the middle with your CC:Turtle.
       
       You can also use V-Mod to spawn them in as VS2-ships directly. Note that saving a VS-ship with CC:Turtles using V-Mod also copies their Computer-IDs.
-      That means you can spawn multiple drones with the same computer-ID. I've included VS-Ship-Schematics of both my head and segment drones with their onboard Turtles.
+      That means you can spawn multiple drones with the same computer-ID: 
+      
+      ![EASIER LEVIATHAN SEGMENT SETUP(2)](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/7e40ba48-4722-4ba4-916b-f0962a0bcd9f)
+      [VIDEO_LINK_HERE]
+
+      I've included VS-Ship-Schematics of both my head and segment drones with their onboard Turtles.
       You can use those, tho you might need to switch the Turtles out with new ones and save them as new schematics first before you spawn more in.
     
  8. Boot-up the drones
 
-     There's a script that should automatically start the firmware when the Turtle turns on. Turning the Turtle off and on again should (re)start the script.
-     They should start hovering in place.
-
-     The drones should automatically start right when you spawn them in using V-Mod. 
+      There's a script that should automatically start the firmware when the Turtle turns on. 
+      
+      Turning the Turtle off and on again should (re)start the script.
+      
+      They should start hovering in place.
+      
+      The drones should automatically start right when you spawn them in using V-Mod. 
       
  9. Setup the drone ID list
 
-     Each drone has a unique ship-ID. You can view this by right-clicking on their turtles when they start-up for the first time.
-     Take note of each of your drone's ID.
-
-     We need to edit the following Lua scripts and set each of their `DRONE_IDs` list:
+      Each drone has a unique ship-ID. You can view this by right-clicking on their turtles when they start-up for the first time.
+      Take note of each of your drone's ID.
+      
+      We need to edit the following Lua scripts and set each of their `DRONE_IDs` list:
         * Swarm Controller Tablet > `swarm_controller.lua`
         * Debugger Tablet > `debugger_leviathan.lua`
         * Head Drone > `firmwareScript.lua`
