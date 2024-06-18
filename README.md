@@ -1,8 +1,31 @@
 # VS2-SKY-WHALE
 
-[Valkyrien Skies 2](https://modrinth.com/mod/valkyrien-skies) is a Minecraft Mod that turns minecraft structures into physics objects. With it are an army of [addons](https://wiki.valkyrienskies.org/wiki/List_of_addons) that add stuff to make them fly. Coupled with [ComputerCraft](https://modrinth.com/mod/cc-tweaked) we can achieve omnidirectional flight. 
+[Valkyrien Skies 2](https://modrinth.com/mod/valkyrien-skies) is a Minecraft Mod that turns minecraft structures into physics objects. With it are an army of [addons](https://wiki.valkyrienskies.org/wiki/List_of_addons) that add stuff to make them fly. Coupled with [ComputerCraft](https://modrinth.com/mod/cc-tweaked) we can achieve omnidirectional flight.
 
-Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord.gg/dRTtrdK)) to find out more.
+Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord.gg/dRTtrdK)) to learn more.
+
+# OMNI-DRONE FLIGHT SYSTEM
+Formerly known as "[Tilt-Ships](https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT)", Omni-Drones are semi-autonomous flying platforms with omnidirectional flight capabilities. 
+
+I've mostly been using them as personal mobile weapons platforms:
+![thumbnail](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c87ddbf1-2530-4edf-8f59-5231f0aafbca)
+![0427(8)](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/41323a57-233e-46d4-8520-8d29d2816e5f)
+
+[YOUTUBE PLAYLIST](https://youtube.com/playlist?list=PL1bsn0MYd0U5VvkUDa2hqaQ9E-eU9RFDA&si=Zbu08AoYWq-EjHpS)
+
+![SKY LEVIATHAN](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/57ede56d-1751-4d03-8e0c-2ebe39008195)
+
+[YOUTUBE PLAYLIST](https://youtube.com/playlist?list=PL1bsn0MYd0U7qUcR59LG_y-N0ULGn7HgU&si=_fwX_7v72mzmtd9j)
+
+![flare](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/97e4f6d1-b269-4000-bd79-798782b7569f)
+[YT VIDEO](https://youtu.be/taD_ttDTe9o)
+![sddefault](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6763488e-f9c5-4960-a4ac-29986cefe200)
+[YT VIDEO]([https://youtu.be/taD_ttDTe9o](https://youtu.be/OMBatVoZDB8?si=L2OVrUiHqs5PhKPk))
+
+I'll be releasing the code and continuing the tutorial series soon in my Youtube channel. 
+Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZBm6LGZzIw&si=Ps_k6OIW1dDwLACP) of what we have of the system so far:
+
+![maxresdefault](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/f1bc447c-8a32-4a5d-8051-02132ebba51e)
 
 ## LOADING INTO THE DEMO MAPS
 1. Download and install the following maps:
