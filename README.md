@@ -20,9 +20,25 @@
 
    Next we need to unpause the segment-drones. We can go thru the list one by one to unpause them all but we can configure them all at once from the `ALL` tab.
 
-   Click the `ALL` button on the top left to bring up the Swarm Controls. We can switch thru the different types of drones to configure by clicking on the Drone-Type button. By default it should start with `Turret`
-   
-7. 
-8. 
+   Click the `ALL` button on the top left to bring up the Swarm Controls. We can switch thru the different types of drones by clicking on the Drone-Type button. It's set to `TURRET` by default. Set it to `SEGMENT` to configure all of our segment-drones.
 
-## HOW TO SETUP CUSTOM LEVIATHAN
+   Toggle the `PAUSE` button to `RUN` and click on `SetSwarm` to send the new settings to our segment-drones.
+
+   Segment-drones only move when the head-drone is "walking" 
+   
+7. Set Head-Drone To "Walk"
+
+   In your swarm controller, click on the head-drone from the drone list (ID:16) and toggle `STOP` to `WALK` to get it to start "walking" the flight path.
+   The segment-drones will start to fly into place one by one as the head-drone moves.
+
+## HOW TO SETUP A CUSTOM LEVIATHAN DRONE SWARM
+
+### Before Loading Into the World
+* install the included resourcepacks
+* install the included datapack
+* In `SAVE_FOLDER/serverconfig/some_peripherals-SERVER.toml` file, configure `SomePeripheralsConfig.RadarSettings>max_entity_search_radius & max_ship_search_radius` both to 500
+* 
+
+VIDEO_HERE
+
+
