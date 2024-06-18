@@ -212,6 +212,12 @@ Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https:/
       I've included my skins in the github repo:
       ![2024-05-22_22 48 32](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/3ded431a-7996-461d-8d92-22cdf43098c9)
       ![2024-06-13_19 34 39](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/1d39079b-9fbc-4f34-9589-ec0ca7935fab)
+      ![2024-06-19_00 06 15](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/d78a9209-363f-4a78-95db-11a86c82cc5d)
+      ![2024-06-19_00 05 12](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/80f66c41-01a9-4c9a-b536-7d0ad28fc5e3)
+      ![2024-06-19_00 03 02](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/427e8668-d726-4b13-8a9f-95a61ff29b98)
+      ![2024-06-19_00 02 39](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c38e8052-2c94-4999-8a0a-972a0e9d1128)
+      ![Screenshot 2024-06-18 235916](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/2fb4d00c-9266-489c-a18f-2413301b63a5)
+      ![Screenshot 2024-06-18 235954](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/e0d9e9c9-789b-478e-b692-96e6608db832)
 
 
       Copy one of the book commands from `VS2-SKY-WHALES/MIRAGE/STRUCTURE_FILES/...` into a book&quill in-game and right click on the onboard Mirage Projector to configure it. With the right nbt files properly added, It should start projecting the skin on your drone.
