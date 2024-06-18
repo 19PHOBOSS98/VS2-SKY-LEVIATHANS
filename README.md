@@ -9,7 +9,7 @@
    
 4. Unpause Head-Drone (TRACER)
 
-   On your controller pocket computer run `swarm_controller.lua`. The swarm controller UI should appear. You can configure each of the drone by clicking on one of their IDs on the list on the left side of the screen. The list is arranged from top to bottom starting with the head-drone (Drone ID:16).
+   On your controller pocket computer run `swarm_controller.lua`. The swarm controller UI should appear. You can configure each of the drones by clicking on one of their IDs on the list on the left side of the screen. The list is arranged from top to bottom starting with the head-drone (Drone ID:16).
 
    All drones are paused by default. We need to set them to `RUN` to get them to move.
 
@@ -20,7 +20,7 @@
 
    Next we need to unpause the segment-drones. We can go thru the list one by one to unpause them all but we can configure them all at once from the `ALL` tab.
 
-   Click the `ALL` button on the top left to bring up the Swarm Controls. We can switch thru the different types of drones by clicking on the Drone-Type button. It's set to `TURRET` by default. Set it to `SEGMENT` to configure all of our segment-drones.
+   Click the `ALL` button on the top left to bring up the Swarm Controls. We can switch thru the different types of drones by clicking on the Drone-Type button. It's set to `TURRET`  when you first start the program. Set it to `SEGMENT` to configure all of our segment-drones.
 
    Toggle the `PAUSE` button to `RUN` and click on `SetSwarm` to send the new settings to our segment-drones.
 
@@ -79,7 +79,7 @@
 
      The drones should automatically start right when you spawn them in using V-Mod. 
       
- 13. Setup the drone ID list
+ 12. Setup the drone ID list
 
      Each drone has a unique ship-ID. You can view this by right-clicking on their turtles when they start-up for the first time.
      Take note of each of your drone's ID.
@@ -88,16 +88,32 @@
         * Swarm Controller Tablet > `swarm_controller.lua`
         * Debugger Tablet > `debugger_leviathan.lua`
         * Head Drone > `firmwareScript.lua`
+ 
+ 13. Set Flight Path
+
+      The head-drone is a `PathTracerDrone`. You give it a set of waypoints and it will trace it in the sky. Go to your head-drone's `firmwareScript.lua` file and edit the `WAYPOINTS` variable. It needs atleast 4 points to start moving.
+     Keep in mind that these coordinates need to be in world space. You can use my [Pathing Library](https://github.com/19PHOBOSS98/Lua-Computercraft-Spline-Path-Library/tree/main) to generate Smooth Curving paths, just make sure to offset them to the right world coordinates before flying your drone.
       
- 15. Run Debugger
+ 15. 
+
+ 16.     
+ 17. Run Debugger
 
       In your Debugger tablet run `debugger_leviathan.lua` and press the `t` key to (re)initialize the leviathan drones with their proper settings (debugger_leviathan.lua > `SEGMENT_DELAY`)
      
- 16. Run Swarm Controller
+ 18. Run Swarm Controller
 
-     In your Swarm Controller tablet run `swarm_controller.lua`.  The swarm controller UI should appear. You can configure each of the drone by clicking on one of their IDs on the list on the left side of the screen.
+     In your Swarm Controller tablet run `swarm_controller.lua`. The swarm controller UI should appear.
 
- 17.
+     You can configure each of the drones individually by clicking on one of their IDs on the list on the left side of the screen.
+
+     You can configure multiple drones of the same tpye all at once by clicking on `ALL`.
+     We can switch thru the different types of drones by clicking on the Drone-Type button. It should be set to `TURRET` when you first start the program. On text (String) inputs don't forget to press `Enter` to lock in the new setting.
+     
+     When you're done with the changes, click on `SetSwarm` to send the new settings to the drones.
+
+ 19. 
+ 20. 
      
 
 
