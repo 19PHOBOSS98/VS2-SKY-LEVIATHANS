@@ -91,17 +91,18 @@
  
  13. Set Flight Path
 
-      The head-drone is a `PathTracerDrone`. You give it a set of waypoints and it will trace it in the sky. Go to your head-drone's `firmwareScript.lua` file and edit the `WAYPOINTS` variable. It needs atleast 4 points to start moving.
-     Keep in mind that these coordinates need to be in world space. You can use my [Pathing Library](https://github.com/19PHOBOSS98/Lua-Computercraft-Spline-Path-Library/tree/main) to generate Smooth Curving paths, just make sure to offset them to the right world coordinates before flying your drone.
+     The head-drone is a `PathTracerDrone`. You give it a set of waypoints and it will trace it in the sky. Go to your head-drone's `firmwareScript.lua` file and edit the `WAYPOINTS` variable. It needs atleast 4 points to start moving.
+     Keep in mind that these coordinates need to be in world space. You can use my [Pathing Library](https://github.com/19PHOBOSS98/Lua-Computercraft-Spline-Path-Library/tree/main) to generate Smooth Curving paths, just make sure to `offset` them to the right world coordinates before flying your drones.
       
- 15. 
+ 14. Set SEGMENT_DELAY
 
- 16.     
- 17. Run Debugger
+      Each of the drones are set to follow each other on a set distance. Edit the `debugger_leviathan.lua` script and set the `SEGMENT_DELAY` variable to adjust the gap between the drones.
+
+ 15. Run Debugger
 
       In your Debugger tablet run `debugger_leviathan.lua` and press the `t` key to (re)initialize the leviathan drones with their proper settings (debugger_leviathan.lua > `SEGMENT_DELAY`)
      
- 18. Run Swarm Controller
+ 16. Run Swarm Controller
 
      In your Swarm Controller tablet run `swarm_controller.lua`. The swarm controller UI should appear.
 
@@ -112,8 +113,7 @@
      
      When you're done with the changes, click on `SetSwarm` to send the new settings to the drones.
 
- 19. 
- 20. 
+ 17.  
      
 
 
