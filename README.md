@@ -25,7 +25,7 @@ Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord
 
    On your controller pocket computer run `swarm_controller.lua`. The swarm controller UI should appear. You can configure each of the drones by clicking on one of their IDs on the list on the left side of the screen. The list is arranged from top to bottom starting with the head-drone (Drone ID:16).
 
-  ![2024-06-18_10 36 54](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/f1fd1735-6444-4f88-8a8a-6de9ad23b583)
+   ![2024-06-18_10 36 54](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/f1fd1735-6444-4f88-8a8a-6de9ad23b583)
 
    All drones are paused by default. We need to set them to `RUN` to get them to move.
 
@@ -66,6 +66,9 @@ Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord
 5. Set Head-Drone To "Walk"
 
    In your swarm controller, click on the head-drone from the drone list (ID:16) and toggle `STOP` to `WALK` to get it to start "walking" the flight path.
+
+   ![2024-06-18_21 36 52](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/1f93df4d-85de-4b81-b6ee-de82b66b958c)
+
    The segment-drones will start to fly into place one by one as the head-drone moves.
 
 ## HOW TO SETUP A CUSTOM LEVIATHAN DRONE SWARM
@@ -74,10 +77,13 @@ Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord
 * install the included resourcepacks
 * install the included datapack
 * install the included modpack
-* add the included nbt schematic files (`VS2-SKY-WHALES\DRONE_STRUCTURE_SCHEMATICS\SCHEMATICS`,`VS2-SKY-WHALES/MIRAGE/STRUCTURE_FILES/...`) to your game's `schematics` folder
-* add the included V-Mod schematics (`VS2-SKY-WHALES\DRONE_STRUCTURE_SCHEMATICS\VMOD_SCHEMATICS`) to your game's `VMod-Schematics` folder
-* In `SAVE_FOLDER/serverconfig/some_peripherals-SERVER.toml` file, configure `SomePeripheralsConfig.RadarSettings>max_entity_search_radius & max_ship_search_radius` both to 500
-(* Incase of having too many active drones, in `SAVE_FOLDER/serverconfig/computercraft-server.toml` file, increment `computer_threads` to a higher value)
+* add the included nbt schematic files to your game's `schematics` folder:
+      `VS2-SKY-WHALES\DRONE_STRUCTURE_SCHEMATICS\SCHEMATICS\...`
+      `VS2-SKY-WHALES\MIRAGE\STRUCTURE_FILES\...`
+* add the included V-Mod schematics to your game's `VMod-Schematics` folder:
+      `VS2-SKY-WHALES\DRONE_STRUCTURE_SCHEMATICS\VMOD_SCHEMATICS\...`
+* In the `SAVE_FOLDER/serverconfig/some_peripherals-SERVER.toml` file, configure `SomePeripheralsConfig.RadarSettings>max_entity_search_radius & max_ship_search_radius` both to 500
+* Incase of having too many active drones, in `SAVE_FOLDER/serverconfig/computercraft-server.toml` file, increment `computer_threads` to a higher value
 
 ### After Loading Into The World
  1. Ready two ComputerCraft:Pocket-Computers to use as your Swarm Controller and Debugger tablets
@@ -88,7 +94,7 @@ Visit their discord: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord
       
       In Creative, you can copy-paste a CC:Turtle (CTRL+SHIFT+MIDDLE-CLICK on block) to have multiple Turtles in the world with the same Computer-ID.
       Each of those Turtles would be pointing to the same Computer Folder. This makes it easier to setup new drones without copy pasting more code.
-      However, you can't typically copy-paste like this in Survival. In that case you need to copy-paste the code to new computer-folders each time you add a new drone to the world.
+      However, you can't typically copy-paste like this in Survival. In that case you need to copy-paste the code to new computer-folders each time you       add a new drone to the world.
     
  3. Copy the Swarm Controller Code to your Swarm Controller's computer-folder
  4. Copy the Debugger Code to your Debugger's computer-folder
