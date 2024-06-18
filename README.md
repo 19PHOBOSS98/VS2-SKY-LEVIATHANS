@@ -9,11 +9,11 @@ Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https:/
    
    [DOWNLOAD_LINKS_HERE]
 
-   Recommended shaders: BSL 8.2.04
+   GIANT GOLDEN GEOFISH Recommended shaders: BSL 8.2.04
 
-   Recommended shaders: Bliss-Shader-main_2
+   WAR MACHINE Recommended shaders: Bliss-Shader-main_2
 
-   Recommended shaders: ComplementaryUnbound_35.1.1
+   CLOTH WHALE Recommended shaders: ComplementaryUnbound_35.1.1
 
 2. Initialize Leviathan Drones
    
@@ -210,6 +210,8 @@ Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https:/
       Follow this [video guide](https://youtu.be/XtJSwktTuuw?si=8fTOF-V3WfaLQDtH) to learn how to use it.
       
       I've included my skins in the github repo:
+      ![2024-05-22_22 48 32](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/3ded431a-7996-461d-8d92-22cdf43098c9)
+      ![2024-06-13_19 34 39](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/1d39079b-9fbc-4f34-9589-ec0ca7935fab)
 
 
       Copy one of the book commands from `VS2-SKY-WHALES/MIRAGE/STRUCTURE_FILES/...` into a book&quill in-game and right click on the onboard Mirage Projector to configure it. With the right nbt files properly added, It should start projecting the skin on your drone.
