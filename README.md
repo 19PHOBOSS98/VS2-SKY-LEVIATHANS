@@ -84,14 +84,22 @@
      Each drone has a unique ship-ID. You can view this by right-clicking on their turtles when they start-up for the first time.
      Take note of each of your drone's ID.
 
-     We need to edit the following Lua scripts:
+     We need to edit the following Lua scripts and set each of their `DRONE_IDs` list:
         * Swarm Controller Tablet > `swarm_controller.lua`
         * Debugger Tablet > `debugger_leviathan.lua`
         * Head Drone > `firmwareScript.lua`
       
- 15. 
- 16. 
- 17. 
+ 15. Run Debugger
+
+      In your Debugger tablet run `debugger_leviathan.lua` and press the `t` key to (re)initialize the leviathan drones with their proper settings (debugger_leviathan.lua > `SEGMENT_DELAY`)
+     
+ 16. Run Swarm Controller
+
+     In your Swarm Controller tablet run `swarm_controller.lua`.  The swarm controller UI should appear. You can configure each of the drone by clicking on one of their IDs on the list on the left side of the screen.
+
+ 17.
+     
+
 
 
 ### Setting Lua Scripts
