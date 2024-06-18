@@ -1,6 +1,6 @@
 # VS2-SKY-WHALE
 
-[Valkyrien Skies 2](https://modrinth.com/mod/valkyrien-skies) is a Minecraft Mod that turns minecraft structures into physics objects. With it are an army of [addons](https://wiki.valkyrienskies.org/wiki/List_of_addons) that made this all possible. Visit their [discord](https://discord.gg/aWeNDCUTS6) to find out more about the mod.
+[Valkyrien Skies 2](https://modrinth.com/mod/valkyrien-skies) is a Minecraft Mod that turns minecraft structures into physics objects. With it are an army of [addons](https://wiki.valkyrienskies.org/wiki/List_of_addons) that add stuff to make them fly. Coupled with [ComputerCraft](https://modrinth.com/mod/cc-tweaked) Visit their [discord](https://discord.gg/aWeNDCUTS6) to find out more about the mod.
 
 ## LOADING INTO THE DEMO MAPS
 1. Download and install the following maps:
@@ -132,13 +132,17 @@
  17. Set Custom Skin
 
      The drones have onboard Mirage Projectors from a small mod I made called [Mirage](https://youtu.be/LpBEGNvNQbg). Follow this [video guide](https://youtu.be/XtJSwktTuuw?si=8fTOF-V3WfaLQDtH) to learn how to use it.
-     I've included my skins in the github repo. Copy the text files you like from `VS2-SKY-WHALES/MIRAGE/STRUCTURE_FILES/...` into a book&quill in-game and right click on the onboard Mirage Projector to set it.
-     With the nbt files properly added, It should start projecting.
+     I've included my skins in the github repo. Copy the text files you like from `VS2-SKY-WHALES/MIRAGE/STRUCTURE_FILES/...` into a book&quill in-game and right click on the onboard Mirage Projector to set it. With the nbt files properly added, It should start projecting the skin.
 
 ### Misc Drone Settings
 
+For this particular setup, I've rigged the drones to output redstone signals depending on how far up they are.
+I used [RFTools](https://modrinth.com/mod/rftools-utility) Wireless redstone transmitters and receivers to feed the signals to an onboard Mirage Projector.
 
+This is how the Cloth Whale changes skin when it ducks under the clouds:
 
-VIDEO_HERE
+In your drone's `firmwareScript.lua` file, set the `ALTITUDE_THRESHOLD` variable to the desired block height you want it to start outputting redstone.
+
+If the ship passes it going down it should send a redstone pulse from the Turtle's back, if it passes it going up, the Turtle outputs a redstone pulse from the front.
 
 
