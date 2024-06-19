@@ -10,7 +10,7 @@ Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https:/
 <div align="center">
    <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6148bab8-46aa-45f4-a368-4e712c577c59" width=500>
 </div>
-Formerly known as [Tilt-Ships]() , Omni-Drones are semi-autonomous flying platforms with omnidirectional flight capabilities. 
+Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a> , Omni-Drones are semi-autonomous flying platforms with omnidirectional flight capabilities. 
 
 I've mostly been using them as personal mobile weapons platforms:
 
