@@ -1,9 +1,10 @@
 # VS2-SKY-LEVIATHANS
 <div align="center">
+   (some of the images have yt videos, click on them)
 <a href="https://youtu.be/V5mmxK4O3HE?si=v8nPOR1zxZWqaxC6"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/d5f47755-08ed-49e0-9e88-3532d6404a50" width=1000 alt="yt"></a>
 
 <a href=""><img src="" alt="yt"></a>
-(click these images to view yt videos)
+
 </div>
 In addition to my Omni-Drone linup are Sky-Leviathans. These are a swarm of Omni-Drones set to fly in formation resembling a "swiming" leviathan with the leading drone following a flight path. 
 
@@ -13,11 +14,12 @@ Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https:/
 
 # OMNI-DRONE FLIGHT SYSTEM
 <div align="center">
-   <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6148bab8-46aa-45f4-a368-4e712c577c59" width=1000>
+   <a href="https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZBm6LGZzIw&si=JGwFWryhzQ6XeHQo"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6148bab8-46aa-45f4-a368-4e712c577c59" width=1000></a>
 </div>
 Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a> , Omni-Drones are semi-autonomous flying platforms with omnidirectional flight capabilities. 
 
 I've mostly been using them as personal mobile weapons platforms:
+
 (click on the images to watch their videos)
 <div align="center">
    <a href="https://youtu.be/bNsv9aqplsU?si=q9HOHIAYyo-aJZK0"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/25acf11b-fd36-44b1-bbd8-5eed3eb8a802" width=500></a>
@@ -164,9 +166,10 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
       
       You can also use V-Mod to spawn them in as VS2-ships directly. Note that saving a VS-ship with CC:Turtles using V-Mod also copies their Computer-IDs.
       That means you can spawn multiple drones with the same computer-ID: 
-      
-      ![EASIER LEVIATHAN SEGMENT SETUP(2)](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/7e40ba48-4722-4ba4-916b-f0962a0bcd9f)
-      [VIDEO_LINK_HERE]
+      <div align="center">
+         <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/7e40ba48-4722-4ba4-916b-f0962a0bcd9f" width=1000></a>
+         [YT VIDEO]
+      </div>
 
       I've included VS-Ship-Schematics of both my head and segment drones with their onboard Turtles.
       You can use those, tho you might need to switch the Turtles out with new ones and save them as new schematics first before you spawn more in.
@@ -206,9 +209,10 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
       The head-drone is a `PathTracerDrone`. You give it a set of waypoints and it will trace it in the sky. Go to your head-drone's `firmwareScript.lua` file and edit the `WAYPOINTS` variable. It needs atleast 4 points to start moving.
       Keep in mind that these coordinates need to be in world space. 
 
-      ![Snapshot_4](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/ce0d254b-10fb-465e-90d3-6142e391f3fa)
-      [YT VIDEO](https://youtu.be/F2cJSpcBj5I?si=zi9aD3y2DP8JqT_W)
-      
+      <div align="center">
+         <a href="https://youtu.be/F2cJSpcBj5I?si=zi9aD3y2DP8JqT_W"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/ce0d254b-10fb-465e-90d3-6142e391f3fa" width=1000></a>
+         [YT VIDEO]
+      </div>
       You can use my [Pathing Library](https://github.com/19PHOBOSS98/Lua-Computercraft-Spline-Path-Library/tree/main) to generate Smooth Curving paths, just make sure to `offset` them to the right world coordinates before flying your drones.
       
  11. Set SEGMENT_DELAY
@@ -249,9 +253,12 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
 
       ![2024-06-18_22 08 44](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6b5293c3-6dcc-43d7-8f35-1ef0ff6bf1dc)
       
-      Each drone has an onboard Mirage Projector from a small mod I made called [Mirage](https://youtu.be/LpBEGNvNQbg):
+      Each drone has an onboard Mirage Projector from a small mod I made call [Mirage]():
       
-      ![315248505-be86255b-6c01-4f94-a4d4-bbafb35c5df4](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/edcd0f3c-0776-47a0-85c8-15dbe773b091)
+      <div align="center">
+         <a href="https://youtu.be/LpBEGNvNQbg"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/edcd0f3c-0776-47a0-85c8-15dbe773b091" width=1000></a>
+         [YT VIDEO]
+      </div>
 
       Follow this [video guide](https://youtu.be/XtJSwktTuuw?si=8fTOF-V3WfaLQDtH) to learn how to use it.
       
@@ -287,4 +294,5 @@ In your drone's `firmwareScript.lua` file, set the `ALTITUDE_THRESHOLD` variable
 
 If the ship passes it going down the Turtle sends a redstone pulse from its back, if the drone passes the threshold going up, the Turtle outputs a redstone pulse from the front.
 
-
+### About The Resourcepack
+For the symbols I used in building the cloth whale all credit goes to Thatgamecompany from their award winning game Journey. This project is solely 
