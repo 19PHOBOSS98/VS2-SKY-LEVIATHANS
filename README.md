@@ -1,6 +1,6 @@
 # VS2-SKY-LEVIATHANS
 
-In addition to my Omni-Drone linup are Sky-Leviathans. These are a swarm of Omni-Drones set to fly in formation resembling a "swiming" leviathan.
+In addition to my Omni-Drone linup are Sky-Leviathans. These are a swarm of Omni-Drones set to fly in formation resembling a "swiming" leviathan with the leading drone following a flight path. 
 
 [Valkyrien Skies 2 (VS2)](https://modrinth.com/mod/valkyrien-skies) is a Minecraft Mod that turns minecraft structures into physics objects. With it are an army of [addons](https://wiki.valkyrienskies.org/wiki/List_of_addons) that "add" stuff to make them fly among other things. Coupled with [ComputerCraft](https://modrinth.com/mod/cc-tweaked) we can achieve omnidirectional flight.
 
@@ -11,23 +11,18 @@ Formerly known as "[Tilt-Ships](https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWO
 
 I've mostly been using them as personal mobile weapons platforms:
 
-<img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/41323a57-233e-46d4-8520-8d29d2816e5f" width=500><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c87ddbf1-2530-4edf-8f59-5231f0aafbca" width=480>
-
-[YOUTUBE PLAYLIST](https://youtube.com/playlist?list=PL1bsn0MYd0U5VvkUDa2hqaQ9E-eU9RFDA&si=Zbu08AoYWq-EjHpS)
-
-<img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/57ede56d-1751-4d03-8e0c-2ebe39008195" width=500>
-
-[YOUTUBE PLAYLIST](https://youtube.com/playlist?list=PL1bsn0MYd0U7qUcR59LG_y-N0ULGn7HgU&si=_fwX_7v72mzmtd9j)
-
-
-<img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/97e4f6d1-b269-4000-bd79-798782b7569f" width=500>
-
-[YT VIDEO](https://youtu.be/taD_ttDTe9o)
-
-
-<img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6763488e-f9c5-4960-a4ac-29986cefe200" width=500>
-
-[YT VIDEO](https://youtu.be/OMBatVoZDB8?si=L2OVrUiHqs5PhKPk)
+<div align="center">
+   <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/41323a57-233e-46d4-8520-8d29d2816e5f" width=500> <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c87ddbf1-2530-4edf-8f59-5231f0aafbca" width=480>
+   <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/57ede56d-1751-4d03-8e0c-2ebe39008195" width=500> <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/25acf11b-fd36-44b1-bbd8-5eed3eb8a802" width=500>
+   <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6763488e-f9c5-4960-a4ac-29986cefe200" width=500> <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/97e4f6d1-b269-4000-bd79-798782b7569f" width=500>
+   <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/46f8ab95-89c6-49a1-bc97-8d8df60f8b3b" width=500><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/44653d45-7fc4-4d2b-8c2f-9fc08a8489c9" width=500>
+   <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/a93c3eec-0c6f-45da-9604-06ea4e182c70" width=500><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c451ad4b-93b9-41b7-9a87-e971cc05ee8c" width=500>
+  <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/13752a40-b78b-4fd7-8433-c0f8ebf0710f" alt="divider180"></picture>
+  <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/2f062bd9-d8cd-4425-8bcb-00096ee885e6" alt="krakenemblem"></picture>
+  <a href="https://www.youtube.com/channel/UCmdUkIr-zCxO9CvOLxeSzlg"><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/eaed673b-eda2-43b7-9312-60868037690a" alt="yt"></a>
+  
+  <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/dd711759-589a-4317-a82f-671ab45baf45" alt="divider"></picture>
+</div>
 
 I'll be releasing the code and continuing the tutorial series soon in my Youtube channel. 
 Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZBm6LGZzIw&si=Ps_k6OIW1dDwLACP) of what I have of the system so far:
