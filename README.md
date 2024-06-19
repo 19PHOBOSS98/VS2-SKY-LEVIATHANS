@@ -13,7 +13,7 @@ Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https:/
 Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a> , Omni-Drones are semi-autonomous flying platforms with omnidirectional flight capabilities. 
 
 I've mostly been using them as personal mobile weapons platforms:
-
+(click on the images to watch their videos)
 <div align="center">
    <a href="https://youtu.be/bNsv9aqplsU?si=q9HOHIAYyo-aJZK0"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/25acf11b-fd36-44b1-bbd8-5eed3eb8a802" width=500></a>
    <a href="https://youtu.be/F2cJSpcBj5I?si=--2G6RtqzgyI-mdC"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c451ad4b-93b9-41b7-9a87-e971cc05ee8c" width=500></a>
@@ -40,8 +40,8 @@ I've mostly been using them as personal mobile weapons platforms:
 
 I'll be releasing the code and continuing the tutorial series soon in my Youtube channel. 
 Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZBm6LGZzIw&si=Ps_k6OIW1dDwLACP) of what I have of the system so far:
+<a href="https://youtu.be/UjBYnDKEcdQ?si=Us9nnENOXruT_1JO"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/f1bc447c-8a32-4a5d-8051-02132ebba51e" width=1000></a>
 
-![maxresdefault](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/f1bc447c-8a32-4a5d-8051-02132ebba51e)
 
 ## LOADING INTO THE DEMO MAPS
 1. Download and install the following maps:
