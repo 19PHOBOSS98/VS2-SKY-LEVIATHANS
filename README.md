@@ -15,16 +15,16 @@ Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FO
 I've mostly been using them as personal mobile weapons platforms:
 
 <div align="center">
-   <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/25acf11b-fd36-44b1-bbd8-5eed3eb8a802" width=500></a>
-   <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c451ad4b-93b9-41b7-9a87-e971cc05ee8c" width=500></a>
-   <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/41323a57-233e-46d4-8520-8d29d2816e5f" width=500></a>
-   <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/57ede56d-1751-4d03-8e0c-2ebe39008195" width=500></a> 
-   <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/97e4f6d1-b269-4000-bd79-798782b7569f" width=500></a>
-   <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6763488e-f9c5-4960-a4ac-29986cefe200" width=500 height=300></a> 
-   <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c87ddbf1-2530-4edf-8f59-5231f0aafbca" width=500></a>
-   <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/46f8ab95-89c6-49a1-bc97-8d8df60f8b3b" width=500></a>
-   <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/44653d45-7fc4-4d2b-8c2f-9fc08a8489c9" width=500></a>
-   <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/a93c3eec-0c6f-45da-9604-06ea4e182c70" width=500></a>
+   <a href="https://youtu.be/bNsv9aqplsU?si=q9HOHIAYyo-aJZK0"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/25acf11b-fd36-44b1-bbd8-5eed3eb8a802" width=500></a>
+   <a href="https://youtu.be/F2cJSpcBj5I?si=--2G6RtqzgyI-mdC"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c451ad4b-93b9-41b7-9a87-e971cc05ee8c" width=500></a>
+   <a href="https://youtu.be/V3nzxjTneVU?si=be4u1V4W7EaugcCa"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/41323a57-233e-46d4-8520-8d29d2816e5f" width=500></a>
+   <a href="https://youtu.be/SlBE66_YH5s?si=Rpzay-YRbR6qihhP"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/57ede56d-1751-4d03-8e0c-2ebe39008195" width=500></a> 
+   <a href="https://youtu.be/taD_ttDTe9o?si=I5Tb_lHbId45Q35O"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/97e4f6d1-b269-4000-bd79-798782b7569f" width=500></a>
+   <a href="https://youtu.be/OMBatVoZDB8?si=nbx4efkzJwfg7CmI"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6763488e-f9c5-4960-a4ac-29986cefe200" width=500 height=300></a> 
+   <a href="https://youtu.be/6bWQAPWenPQ?si=adP8IJIbNb8YkUDD"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c87ddbf1-2530-4edf-8f59-5231f0aafbca" width=500></a>
+   <a href="https://youtu.be/SonVcV6iPUk?si=BCP2k6l1R0J1MtYX"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/46f8ab95-89c6-49a1-bc97-8d8df60f8b3b" width=500></a>
+   <a href="https://youtu.be/f85uITug-Ps?si=ZUhMckaseT9XPWzQ"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/44653d45-7fc4-4d2b-8c2f-9fc08a8489c9" width=500></a>
+   <a href="https://youtu.be/yQ7BXQkKIRI?si=XwBuEqA3NIhbMeWr"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/a93c3eec-0c6f-45da-9604-06ea4e182c70" width=500></a>
 
    but sometimes I make chill stuff:
    
