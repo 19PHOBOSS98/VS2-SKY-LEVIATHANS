@@ -1,5 +1,10 @@
 # VS2-SKY-LEVIATHANS
-![geofish](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/2fb4d00c-9266-489c-a18f-2413301b63a5)
+<div align="center">
+<a href="https://youtu.be/V5mmxK4O3HE?si=v8nPOR1zxZWqaxC6"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/d5f47755-08ed-49e0-9e88-3532d6404a50" width=1000 alt="yt"></a>
+
+<a href=""><img src="" alt="yt"></a>
+(click these images to view yt videos)
+</div>
 In addition to my Omni-Drone linup are Sky-Leviathans. These are a swarm of Omni-Drones set to fly in formation resembling a "swiming" leviathan with the leading drone following a flight path. 
 
 [Valkyrien Skies 2 (VS2)](https://modrinth.com/mod/valkyrien-skies) is a Minecraft Mod that turns minecraft structures into physics objects. With it are an army of [addons](https://wiki.valkyrienskies.org/wiki/List_of_addons) that "add" stuff to make them fly among other things. Coupled with [ComputerCraft](https://modrinth.com/mod/cc-tweaked) we can achieve omnidirectional flight.
@@ -25,10 +30,6 @@ I've mostly been using them as personal mobile weapons platforms:
    <a href="https://youtu.be/SonVcV6iPUk?si=BCP2k6l1R0J1MtYX"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/46f8ab95-89c6-49a1-bc97-8d8df60f8b3b" width=500></a>
    <a href="https://youtu.be/f85uITug-Ps?si=ZUhMckaseT9XPWzQ"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/44653d45-7fc4-4d2b-8c2f-9fc08a8489c9" width=500></a>
    <a href="https://youtu.be/yQ7BXQkKIRI?si=XwBuEqA3NIhbMeWr"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/a93c3eec-0c6f-45da-9604-06ea4e182c70" width=500></a>
-
-   but sometimes I make chill stuff:
-   
-   <a href="https://youtu.be/V5mmxK4O3HE?si=v8nPOR1zxZWqaxC6"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/d5f47755-08ed-49e0-9e88-3532d6404a50" alt="yt"></a>
 
   <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/13752a40-b78b-4fd7-8433-c0f8ebf0710f" alt="divider180"></picture>
   <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/2f062bd9-d8cd-4425-8bcb-00096ee885e6" alt="krakenemblem"></picture>
