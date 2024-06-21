@@ -267,8 +267,8 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
       ![2024-06-13_19 34 39](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/1d39079b-9fbc-4f34-9589-ec0ca7935fab)
       ![2024-06-19_00 06 15](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/d78a9209-363f-4a78-95db-11a86c82cc5d)
       ![2024-06-19_00 05 12](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/80f66c41-01a9-4c9a-b536-7d0ad28fc5e3)
-      ![2024-06-19_00 03 02](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/427e8668-d726-4b13-8a9f-95a61ff29b98)
-      ![2024-06-19_00 02 39](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c38e8052-2c94-4999-8a0a-972a0e9d1128)
+      ![2024-06-21_19 30 00](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/b276657b-d41b-4a72-ae6a-a37cd80c3edc)
+      ![2024-06-21_19 29 35](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/85bd24f6-39c2-4e1c-adc8-1d32794cc200)
       ![Screenshot 2024-06-18 235916](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/2fb4d00c-9266-489c-a18f-2413301b63a5)
       ![Screenshot 2024-06-18 235954](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/e0d9e9c9-789b-478e-b692-96e6608db832)
 
@@ -295,4 +295,5 @@ In your drone's `firmwareScript.lua` file, set the `ALTITUDE_THRESHOLD` variable
 If the ship passes it going down the Turtle sends a redstone pulse from its back, if the drone passes the threshold going up, the Turtle outputs a redstone pulse from the front.
 
 ### About The Resourcepack
-For the symbols I used in building the cloth whale all credit goes to Thatgamecompany from their award winning game Journey. This project is solely 
+I made a random image generator using Godot to make the symbols:
+https://github.com/19PHOBOSS98/JOURNEY_RANDOM_SYMBOLS_GENERATOR
