@@ -49,15 +49,13 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
 ## LOADING INTO THE DEMO MAPS
 1. Download and install the following maps:
    
-   [DOWNLOAD_LINKS_HERE]
+   [GIANT GOLDEN GEOFISH](https://www.planetminecraft.com/project/giant-golden-geofish-sky-leviathan-demo-world-valkyrien-skies-2/) Recommended shaders: BSL 8.2.04
 
-   GIANT GOLDEN GEOFISH Recommended shaders: BSL 8.2.04
+   [WAR MACHINE](https://www.planetminecraft.com/project/war-machine-from-journey-sky-leviathan-demo-world-valkyrien-skies-2/) Recommended shaders: Bliss-Shader-main_2
 
-   WAR MACHINE Recommended shaders: Bliss-Shader-main_2
+   [CLOTH WHALE](https://www.planetminecraft.com/project/cloth-whale-from-journey-sky-leviathan-demo-world-valkyrien-skies-2/) Recommended shaders: ComplementaryUnbound_35.1.1
 
-   CLOTH WHALE Recommended shaders: ComplementaryUnbound_35.1.1
-
-2. Initialize Leviathan Drones
+3. Initialize Leviathan Drones
    
    Once you load in to the world, you should have two Computercraft:Pocket Computers in your hotbar. The one with ID:0 is your controller and the other one with ID:1 is your debugger. Run `debugger_leviathan.lua` on the debugger and press 't' on your keyboard to (re)initialize the drones.
 
@@ -69,7 +67,7 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
    
    ![2024-06-18_10 36 42](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/13008e87-d190-46aa-8998-305fb85e2eb6)
 
-3. Unpause Head-Drone (TRACER)
+4. Unpause Head-Drone (TRACER)
 
    On your controller pocket computer run `swarm_controller.lua`. The swarm controller UI should appear. You can configure each of the drones by clicking on one of their IDs on the list on the left side of the screen. The list is arranged from top to bottom starting with the head-drone (Drone ID:16).
 
@@ -85,7 +83,7 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
 
    ![2024-06-18_21 29 17](https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/eeac140c-be0c-4d48-8d22-d0dc669c6875)
 
-4. Unpause Segment-Drone (SEGMENT)
+5. Unpause Segment-Drone (SEGMENT)
 
    Next we need to unpause the segment-drones. We can go thru the list one by one to unpause them all but we can configure them all at once from the `ALL` tab. Click the `ALL` button on the top left to bring up the Swarm Controls. 
 
@@ -111,7 +109,7 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
 
    Segment-drones only move when the head-drone is "walking" 
    
-5. Set Head-Drone To "Walk"
+6. Set Head-Drone To "Walk"
 
    In your swarm controller, click on the head-drone from the drone list (ID:16) and toggle `STOP` to `WALK` to get it to start "walking" the flight path.
 
