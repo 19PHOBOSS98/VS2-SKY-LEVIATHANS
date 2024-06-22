@@ -3,7 +3,7 @@
    <h1>VS2-SKY-LEVIATHANS</h1>
    (some of the images have yt videos, click on them)
 
-<a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/efd321a6-02b6-4e3f-b955-5c71b814307d"  width=1000 alt="yt"></a>
+<a href="https://youtu.be/XAGlgm_46qY"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/efd321a6-02b6-4e3f-b955-5c71b814307d"  width=1000 alt="yt"></a>
 
 <a href="https://youtu.be/V5mmxK4O3HE?si=v8nPOR1zxZWqaxC6"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/d5f47755-08ed-49e0-9e88-3532d6404a50" width=1000 alt="yt"></a>
 
@@ -164,7 +164,7 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
       You can also use V-Mod to spawn them in as VS2-ships directly. Note that saving a VS-ship with CC:Turtles using V-Mod also copies their Computer-IDs.
       That means you can spawn multiple drones with the same computer-ID: 
       <div align="center">
-         <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/7e40ba48-4722-4ba4-916b-f0962a0bcd9f" width=1000></a>
+         <a href="https://youtu.be/YxsfIMD5-dg"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/7e40ba48-4722-4ba4-916b-f0962a0bcd9f" width=1000></a>
          [YT VIDEO]
       </div>
 
