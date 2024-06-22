@@ -1,9 +1,10 @@
 # VS2-SKY-LEVIATHANS
 <div align="center">
    (some of the images have yt videos, click on them)
-<a href="https://youtu.be/V5mmxK4O3HE?si=v8nPOR1zxZWqaxC6"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/d5f47755-08ed-49e0-9e88-3532d6404a50" width=1000 alt="yt"></a>
 
-<a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/efd321a6-02b6-4e3f-b955-5c71b814307d" alt="yt"></a>
+<a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/efd321a6-02b6-4e3f-b955-5c71b814307d"  width=1000 alt="yt"></a>
+
+<a href="https://youtu.be/V5mmxK4O3HE?si=v8nPOR1zxZWqaxC6"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/d5f47755-08ed-49e0-9e88-3532d6404a50" width=1000 alt="yt"></a>
 
 </div>
 In addition to my Omni-Drone linup are Sky-Leviathans. These are a swarm of Omni-Drones set to fly in formation resembling a "swiming" leviathan with the leading drone following a flight path. 
