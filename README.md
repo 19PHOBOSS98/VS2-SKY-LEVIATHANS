@@ -22,14 +22,13 @@ Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FO
 
 I've mostly been using them as personal mobile weapons platforms:
 
-(click on the images to watch their videos)
 <div align="center">
-   <a href="https://youtu.be/bNsv9aqplsU?si=q9HOHIAYyo-aJZK0"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/25acf11b-fd36-44b1-bbd8-5eed3eb8a802" width=500></a>
-   <a href="https://youtu.be/V3nzxjTneVU?si=be4u1V4W7EaugcCa"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/41323a57-233e-46d4-8520-8d29d2816e5f" width=500></a>
-   <a href="https://youtu.be/taD_ttDTe9o?si=I5Tb_lHbId45Q35O"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/4d539741-b692-4587-9905-2ad02a7f245e" width=500></a>
-   <a href="https://youtu.be/6bWQAPWenPQ?si=adP8IJIbNb8YkUDD"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c87ddbf1-2530-4edf-8f59-5231f0aafbca" width=500></a>
-![image]()
-
+   
+   <a href="https://youtu.be/V3nzxjTneVU?si=be4u1V4W7EaugcCa"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/2e28fdbd-9965-4669-9bbd-1f08b847e4fb" width=500></a>
+   <a href="https://youtu.be/taD_ttDTe9o?si=I5Tb_lHbId45Q35O"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/7389152f-4932-49b3-94f5-349fe4b60b19" width=500></a>
+   <a href="https://youtu.be/6bWQAPWenPQ?si=adP8IJIbNb8YkUDD"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/bb6d2b99-0aec-4507-bb44-dccc4fbd2111" width=500></a>
+   <a href="https://youtu.be/SlBE66_YH5s?si=0GAqMIa5j-sWAy26"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/00cbd227-77a3-45d5-a33a-6859a0bfdf3a" width=500></a>
+  
    <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/13752a40-b78b-4fd7-8433-c0f8ebf0710f" alt="divider180"></picture>
    <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/2f062bd9-d8cd-4425-8bcb-00096ee885e6" alt="krakenemblem"></picture>
    <a href="https://www.youtube.com/channel/UCmdUkIr-zCxO9CvOLxeSzlg"><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/eaed673b-eda2-43b7-9312-60868037690a" alt="yt"></a>
@@ -211,7 +210,7 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
          <a href="https://youtu.be/F2cJSpcBj5I?si=zi9aD3y2DP8JqT_W"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/ce0d254b-10fb-465e-90d3-6142e391f3fa" width=1000></a>
          [YT VIDEO]
       </div>
-      You can use my [Pathing Library](https://github.com/19PHOBOSS98/Lua-Computercraft-Spline-Path-Library/tree/main) to generate Smooth Curving paths, just make sure to `offset` them to the right world coordinates before flying your drones.
+You can use my [Pathing Library](https://github.com/19PHOBOSS98/Lua-Computercraft-Spline-Path-Library/tree/main) to generate Smooth Curving paths, just make sure to `offset` them to the right world coordinates before flying your drones.
       
  11. Set SEGMENT_DELAY
 
