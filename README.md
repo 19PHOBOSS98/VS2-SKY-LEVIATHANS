@@ -1,5 +1,6 @@
-# VS2-SKY-LEVIATHANS
+
 <div align="center">
+   <h1>VS2-SKY-LEVIATHANS</h1>
    (some of the images have yt videos, click on them)
 
 <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/efd321a6-02b6-4e3f-b955-5c71b814307d"  width=1000 alt="yt"></a>
@@ -13,8 +14,8 @@ In addition to my Omni-Drone linup are Sky-Leviathans. These are a swarm of Omni
 
 Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord.gg/dRTtrdK)) to learn more.
 
-# OMNI-DRONE FLIGHT SYSTEM
 <div align="center">
+   <h1>OMNI-DRONE FLIGHT SYSTEM</h1>
    <a href="https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZBm6LGZzIw&si=JGwFWryhzQ6XeHQo"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6148bab8-46aa-45f4-a368-4e712c577c59" width=1000></a>
 </div>
 Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a> , Omni-Drones are semi-autonomous flying platforms with omnidirectional flight capabilities. 
@@ -47,7 +48,9 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
 <a href="https://youtu.be/UjBYnDKEcdQ?si=Us9nnENOXruT_1JO"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/f1bc447c-8a32-4a5d-8051-02132ebba51e" width=1000></a>
 
 
-## LOADING INTO THE DEMO MAPS
+<div align="center">
+   <h2>LOADING INTO THE DEMO MAPS</h2>
+</div>
 1. Download and install the following maps:
    
    [GIANT GOLDEN GEOFISH](https://www.planetminecraft.com/project/giant-golden-geofish-sky-leviathan-demo-world-valkyrien-skies-2/) Recommended shaders: BSL 8.2.04
@@ -118,8 +121,9 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
 
    The segment-drones will start to fly into place one by one as the head-drone moves.
 
-## HOW TO SETUP A CUSTOM LEVIATHAN DRONE SWARM
-
+<div align="center">
+   <h3>HOW TO SETUP A CUSTOM LEVIATHAN DRONE SWARM</h3>
+</div>
 ### Before Loading Into The World
 * install the included resourcepacks
 * install the included datapack
@@ -276,8 +280,9 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
 
       <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/dcb17e81-1579-4c9f-956f-ed8b321930c0" width=1000>
 
-### Misc Drone Settings
-
+<div align="center">
+   <h3>Misc Drone Settings</h3>
+</div>
 For this particular setup, I've rigged the drones to output redstone signals depending on how far up they are.
 I used [RFTools](https://modrinth.com/mod/rftools-utility) Wireless redstone transmitters and receivers to feed the signals to an onboard Mirage Projector.
 
@@ -293,6 +298,9 @@ In your drone's `firmwareScript.lua` file, set the `ALTITUDE_THRESHOLD` variable
 
 If the ship passes it going down the Turtle sends a redstone pulse from its back, if the drone passes the threshold going up, the Turtle outputs a redstone pulse from the front.
 
-### About The Resourcepack
+<div align="center">
+   <h3>About The Resourcepack</h3>
+</div>
+
 I made a random image generator using Godot to make the symbols:
 https://github.com/19PHOBOSS98/JOURNEY_RANDOM_SYMBOLS_GENERATOR
