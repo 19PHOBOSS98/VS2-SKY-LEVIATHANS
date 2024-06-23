@@ -1,9 +1,11 @@
-# VS2-SKY-LEVIATHANS
-<div align="center">
-   (some of the images have yt videos, click on them)
-<a href="https://youtu.be/V5mmxK4O3HE?si=v8nPOR1zxZWqaxC6"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/d5f47755-08ed-49e0-9e88-3532d6404a50" width=1000 alt="yt"></a>
 
-<a href=""><img src="" alt="yt"></a>
+<div align="center">
+   <h1>VS2-SKY-LEVIATHANS</h1>
+   (some of the images have yt videos, click on them)
+
+<a href="https://youtu.be/XAGlgm_46qY"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/efd321a6-02b6-4e3f-b955-5c71b814307d"  width=1000 alt="yt"></a>
+
+<a href="https://youtu.be/V5mmxK4O3HE?si=v8nPOR1zxZWqaxC6"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/d5f47755-08ed-49e0-9e88-3532d6404a50" width=1000 alt="yt"></a>
 
 </div>
 In addition to my Omni-Drone linup are Sky-Leviathans. These are a swarm of Omni-Drones set to fly in formation resembling a "swiming" leviathan with the leading drone following a flight path. 
@@ -12,32 +14,26 @@ In addition to my Omni-Drone linup are Sky-Leviathans. These are a swarm of Omni
 
 Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord.gg/dRTtrdK)) to learn more.
 
-# OMNI-DRONE FLIGHT SYSTEM
 <div align="center">
+   <h1>OMNI-DRONE FLIGHT SYSTEM</h1>
    <a href="https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZBm6LGZzIw&si=JGwFWryhzQ6XeHQo"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6148bab8-46aa-45f4-a368-4e712c577c59" width=1000></a>
 </div>
 Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a> , Omni-Drones are semi-autonomous flying platforms with omnidirectional flight capabilities. 
 
 I've mostly been using them as personal mobile weapons platforms:
 
-(click on the images to watch their videos)
 <div align="center">
-   <a href="https://youtu.be/bNsv9aqplsU?si=q9HOHIAYyo-aJZK0"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/25acf11b-fd36-44b1-bbd8-5eed3eb8a802" width=500></a>
-   <a href="https://youtu.be/F2cJSpcBj5I?si=--2G6RtqzgyI-mdC"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c451ad4b-93b9-41b7-9a87-e971cc05ee8c" width=500></a>
-   <a href="https://youtu.be/V3nzxjTneVU?si=be4u1V4W7EaugcCa"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/41323a57-233e-46d4-8520-8d29d2816e5f" width=500></a>
-   <a href="https://youtu.be/SlBE66_YH5s?si=Rpzay-YRbR6qihhP"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/57ede56d-1751-4d03-8e0c-2ebe39008195" width=500></a> 
-   <a href="https://youtu.be/taD_ttDTe9o?si=I5Tb_lHbId45Q35O"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/97e4f6d1-b269-4000-bd79-798782b7569f" width=500></a>
-   <a href="https://youtu.be/OMBatVoZDB8?si=nbx4efkzJwfg7CmI"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/6763488e-f9c5-4960-a4ac-29986cefe200" width=500 height=300></a> 
-   <a href="https://youtu.be/6bWQAPWenPQ?si=adP8IJIbNb8YkUDD"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/c87ddbf1-2530-4edf-8f59-5231f0aafbca" width=500></a>
-   <a href="https://youtu.be/SonVcV6iPUk?si=BCP2k6l1R0J1MtYX"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/46f8ab95-89c6-49a1-bc97-8d8df60f8b3b" width=500></a>
-   <a href="https://youtu.be/f85uITug-Ps?si=ZUhMckaseT9XPWzQ"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/44653d45-7fc4-4d2b-8c2f-9fc08a8489c9" width=500></a>
-   <a href="https://youtu.be/yQ7BXQkKIRI?si=XwBuEqA3NIhbMeWr"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/a93c3eec-0c6f-45da-9604-06ea4e182c70" width=500></a>
-
-  <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/13752a40-b78b-4fd7-8433-c0f8ebf0710f" alt="divider180"></picture>
-  <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/2f062bd9-d8cd-4425-8bcb-00096ee885e6" alt="krakenemblem"></picture>
-  <a href="https://www.youtube.com/channel/UCmdUkIr-zCxO9CvOLxeSzlg"><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/eaed673b-eda2-43b7-9312-60868037690a" alt="yt"></a>
+   
+   <a href="https://youtu.be/V3nzxjTneVU?si=be4u1V4W7EaugcCa"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/2e28fdbd-9965-4669-9bbd-1f08b847e4fb" width=500></a>
+   <a href="https://youtu.be/taD_ttDTe9o?si=I5Tb_lHbId45Q35O"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/7389152f-4932-49b3-94f5-349fe4b60b19" width=500></a>
+   <a href="https://youtu.be/6bWQAPWenPQ?si=adP8IJIbNb8YkUDD"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/bb6d2b99-0aec-4507-bb44-dccc4fbd2111" width=500></a>
+   <a href="https://youtu.be/SlBE66_YH5s?si=0GAqMIa5j-sWAy26"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/00cbd227-77a3-45d5-a33a-6859a0bfdf3a" width=500></a>
   
-  <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/dd711759-589a-4317-a82f-671ab45baf45" alt="divider"></picture>
+   <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/13752a40-b78b-4fd7-8433-c0f8ebf0710f" alt="divider180"></picture>
+   <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/2f062bd9-d8cd-4425-8bcb-00096ee885e6" alt="krakenemblem"></picture>
+   <a href="https://www.youtube.com/channel/UCmdUkIr-zCxO9CvOLxeSzlg"><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/eaed673b-eda2-43b7-9312-60868037690a" alt="yt"></a>
+   
+   <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/dd711759-589a-4317-a82f-671ab45baf45" alt="divider"></picture>
 </div>
 
 
@@ -46,7 +42,9 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
 <a href="https://youtu.be/UjBYnDKEcdQ?si=Us9nnENOXruT_1JO"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/f1bc447c-8a32-4a5d-8051-02132ebba51e" width=1000></a>
 
 
-## LOADING INTO THE DEMO MAPS
+<div align="center">
+   <h2>LOADING INTO THE DEMO MAPS</h2>
+</div>
 1. Download and install the following maps:
    
    [GIANT GOLDEN GEOFISH](https://www.planetminecraft.com/project/giant-golden-geofish-sky-leviathan-demo-world-valkyrien-skies-2/) Recommended shaders: BSL 8.2.04
@@ -117,8 +115,9 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
 
    The segment-drones will start to fly into place one by one as the head-drone moves.
 
-## HOW TO SETUP A CUSTOM LEVIATHAN DRONE SWARM
-
+<div align="center">
+   <h3>HOW TO SETUP A CUSTOM LEVIATHAN DRONE SWARM</h3>
+</div>
 ### Before Loading Into The World
 * install the included resourcepacks
 * install the included datapack
@@ -165,7 +164,7 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
       You can also use V-Mod to spawn them in as VS2-ships directly. Note that saving a VS-ship with CC:Turtles using V-Mod also copies their Computer-IDs.
       That means you can spawn multiple drones with the same computer-ID: 
       <div align="center">
-         <a href=""><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/7e40ba48-4722-4ba4-916b-f0962a0bcd9f" width=1000></a>
+         <a href="https://youtu.be/YxsfIMD5-dg"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/7e40ba48-4722-4ba4-916b-f0962a0bcd9f" width=1000></a>
          [YT VIDEO]
       </div>
 
@@ -211,7 +210,7 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
          <a href="https://youtu.be/F2cJSpcBj5I?si=zi9aD3y2DP8JqT_W"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/ce0d254b-10fb-465e-90d3-6142e391f3fa" width=1000></a>
          [YT VIDEO]
       </div>
-      You can use my [Pathing Library](https://github.com/19PHOBOSS98/Lua-Computercraft-Spline-Path-Library/tree/main) to generate Smooth Curving paths, just make sure to `offset` them to the right world coordinates before flying your drones.
+You can use my [Pathing Library](https://github.com/19PHOBOSS98/Lua-Computercraft-Spline-Path-Library/tree/main) to generate Smooth Curving paths, just make sure to `offset` them to the right world coordinates before flying your drones.
       
  11. Set SEGMENT_DELAY
 
@@ -275,8 +274,9 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
 
       <img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/dcb17e81-1579-4c9f-956f-ed8b321930c0" width=1000>
 
-### Misc Drone Settings
-
+<div align="center">
+   <h3>Misc Drone Settings</h3>
+</div>
 For this particular setup, I've rigged the drones to output redstone signals depending on how far up they are.
 I used [RFTools](https://modrinth.com/mod/rftools-utility) Wireless redstone transmitters and receivers to feed the signals to an onboard Mirage Projector.
 
@@ -292,6 +292,9 @@ In your drone's `firmwareScript.lua` file, set the `ALTITUDE_THRESHOLD` variable
 
 If the ship passes it going down the Turtle sends a redstone pulse from its back, if the drone passes the threshold going up, the Turtle outputs a redstone pulse from the front.
 
-### About The Resourcepack
+<div align="center">
+   <h3>About The Resourcepack</h3>
+</div>
+
 I made a random image generator using Godot to make the symbols:
 https://github.com/19PHOBOSS98/JOURNEY_RANDOM_SYMBOLS_GENERATOR
