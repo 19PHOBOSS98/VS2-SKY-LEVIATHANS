@@ -12,6 +12,12 @@ local PathTracerDrone = Object:subclass()
 function PathTracerDrone:setShipFrameClass(configs) --override this to set ShipFrame Template
 	self.ShipFrame = TenThrusterTemplateVerticalCompactSP(configs)
 end
+
+function PathTracerDrone:setCustomTargetRotationPathing(rotation,tangent,normal)
+	local new_rotation = quaternion.fromToRotation(rotation:localPositiveZ(), vector.new(0,1,0))*rotation
+	new_rotation = quaternion.fromToRotation(new_rotation:localPositiveY(), tangent)*new_rotation
+		return new_rotation
+end
 --overridable functions--
 
 --custom--
@@ -73,8 +79,7 @@ function PathTracerDrone:run()
 	self.ShipFrame:run()
 end
 
-function PathTracerDrone:droneCustomFlightLoopBehavior()
-end
+
 
 --custom--
 
@@ -118,12 +123,6 @@ function PathTracerDrone:overrideShipFrameGetCustomSettings()
 	end
 end
 
-function PathTracerDrone:customOrientationOnFlightPath(tangent,normal,target_rotatoion)
-	--target_rotatoion = quaternion.fromToRotation(target_rotatoion:localPositiveZ(), normal)*target_rotatoion --orients dorsal to the normal of the curve
-	target_rotatoion = quaternion.fromToRotation(target_rotatoion:localPositiveZ(), vector.new(0,1,0))*target_rotatoion --dorsal
-	target_rotatoion = quaternion.fromToRotation(target_rotatoion:localPositiveY(), tangent)*target_rotatoion --nose
-	return target_rotatoion
-end
 
 function PathTracerDrone:overrideShipFrameCustomFlightLoopBehavior()
 	local ptd = self
@@ -153,12 +152,14 @@ function PathTracerDrone:overrideShipFrameCustomFlightLoopBehavior()
 		local normal = ptd.SPLINE_COORDS[ptd.tracker:getCurrentIndex()].normal
 
 		--rotation
-		self.target_rotation = ptd:customOrientationOnFlightPath(tangent,normal,self.target_rotation)
-		
-		
+		--self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveX(), normal)*self.target_rotation
+		--self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveZ(), vector.new(0,1,0))*self.target_rotation
+		--self.target_rotation = quaternion.fromToRotation(self.target_rotation:localPositiveY(), tangent)*self.target_rotation
+		self.target_rotation = ptd:setCustomTargetRotationPathing(self.target_rotation,tangent,normal)
+
 		--position
 		self.target_global_position = ptd.SPLINE_COORDS[ptd.tracker:getCurrentIndex()].pos
-		self:debugProbe({tracker_idx = ptd.tracker:getCurrentIndex()})
+		--self:debugProbe({tracker_idx = ptd.tracker:getCurrentIndex()})
 		local current_time = os.clock()
 		ptd.count = ptd.count+(current_time - ptd.prev_time)
 
@@ -170,8 +171,6 @@ function PathTracerDrone:overrideShipFrameCustomFlightLoopBehavior()
 		end
 
 		ptd.prev_time = current_time
-
-		ptd:droneCustomFlightLoopBehavior()
 	end
 end
 
