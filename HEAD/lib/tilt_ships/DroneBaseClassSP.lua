@@ -23,11 +23,23 @@ local DroneBaseClass = require "lib.tilt_ships.DroneBaseClass"
 local DroneBaseClassSP = DroneBaseClass:subclass()
 
 --OVERRIDABLE FUNCTIONS--
+function DroneBaseClassSP:powerThrusters(redstone_power)
+	if(type(redstone_power) == "number")then
+		
+	else
+		
+	end
+end
+
 function DroneBaseClassSP:organizeThrusterTable(thruster_table)
 
 	local new_thruster_table = {}
 
 	return new_thruster_table
+end
+
+function DroneBaseClassSP:getOffsetDefaultShipOrientation(default_ship_orientation)	--based on dynamic ship orientation (rotated from how it is oriented right now)
+	return DroneBaseClass:getOffsetDefaultShipOrientation(default_ship_orientation)
 end
 --OVERRIDABLE FUNCTIONS--
 
@@ -55,22 +67,17 @@ function DroneBaseClassSP:rotateInertiaTensors()
 													self.ship_constants.DEFAULT_NEW_LOCAL_SHIP_ORIENTATION)
 end
 
-function DroneBaseClassSP:overrideThrusters(power)
-	local overide_power = {}
-	for i=1,12,1 do
-		overide_power[i] = power
-	end
-	local component_control_msg = self:composeComponentMessage(overide_power)
-	self:communicateWithComponent(component_control_msg)
-
+function DroneBaseClassSP:resetRedstone()
+	self:powerThrusters(0)
+	self:onResetRedstone()
 end
 
-
 function DroneBaseClassSP:getThrusterTable()
-	self:overrideThrusters(1)
-	os.sleep(0.1)
+	self:powerThrusters(1)
+	os.sleep(1)
+	
 	local thrusters = vst_components.get_thrusters()
-	self:overrideThrusters(0)
+	self:powerThrusters(0)
 
 	local thruster_table = {}
 
@@ -90,6 +97,7 @@ function DroneBaseClassSP:getThrusterTable()
 	h.flush()
 	h.close()
 	]]--
+	print(#thrusters," Thrusters Detected")
 	return self:organizeThrusterTable(thruster_table)
 end
 
@@ -332,8 +340,7 @@ end
 
 function DroneBaseClassSP:applyRedStonePower(redstone_power)
 	local pwm_redstone_power = self.pwmMatrixList:run(redstone_power)
-	local component_control_msg = self:composeComponentMessage(pwm_redstone_power)
-	self:communicateWithComponent(component_control_msg)
+	self:powerThrusters(pwm_redstone_power)
 end
 
 return DroneBaseClassSP
