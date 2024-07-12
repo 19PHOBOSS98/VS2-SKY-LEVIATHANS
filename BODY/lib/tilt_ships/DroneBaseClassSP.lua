@@ -23,6 +23,13 @@ local DroneBaseClass = require "lib.tilt_ships.DroneBaseClass"
 local DroneBaseClassSP = DroneBaseClass:subclass()
 
 --OVERRIDABLE FUNCTIONS--
+function DroneBaseClassSP:organizeThrusterTable(thruster_table)
+
+	local new_thruster_table = {}
+
+	return new_thruster_table
+end
+
 function DroneBaseClassSP:powerThrusters(redstone_power)
 	if(type(redstone_power) == "number")then
 		
@@ -31,15 +38,56 @@ function DroneBaseClassSP:powerThrusters(redstone_power)
 	end
 end
 
-function DroneBaseClassSP:organizeThrusterTable(thruster_table)
-
-	local new_thruster_table = {}
-
-	return new_thruster_table
-end
-
 function DroneBaseClassSP:getOffsetDefaultShipOrientation(default_ship_orientation)	--based on dynamic ship orientation (rotated from how it is oriented right now)
 	return DroneBaseClass:getOffsetDefaultShipOrientation(default_ship_orientation)
+end
+
+function DroneBaseClassSP:initAccelerationControllers()
+	local max_lin_acc = self.max_linear_acceleration
+	local max_ang_acc = self.max_angular_acceleration
+	self.pos_PID = pidcontrollers.PID_Discrete_Vector(	self.ship_constants.PID_SETTINGS.POS.P,
+											self.ship_constants.PID_SETTINGS.POS.I,
+											self.ship_constants.PID_SETTINGS.POS.D,
+											-max_lin_acc,max_lin_acc)
+
+	self.rot_x_PID = pidcontrollers.PID_Discrete_Scalar(self.ship_constants.PID_SETTINGS.ROT.X.P,
+													self.ship_constants.PID_SETTINGS.ROT.X.I,
+													self.ship_constants.PID_SETTINGS.ROT.X.D,
+													-max_ang_acc[1][1],max_ang_acc[1][1])
+	self.rot_y_PID = pidcontrollers.PID_Discrete_Scalar(self.ship_constants.PID_SETTINGS.ROT.Y.P,
+													self.ship_constants.PID_SETTINGS.ROT.Y.I,
+													self.ship_constants.PID_SETTINGS.ROT.Y.D,
+													-max_ang_acc[2][1],max_ang_acc[2][1])
+	self.rot_z_PID = pidcontrollers.PID_Discrete_Scalar(self.ship_constants.PID_SETTINGS.ROT.Z.P,
+													self.ship_constants.PID_SETTINGS.ROT.Z.I,
+													self.ship_constants.PID_SETTINGS.ROT.Z.D,
+													-max_ang_acc[3][1],max_ang_acc[3][1])
+
+	-- self.pos_PID = pidcontrollers.PID_Continuous_Vector(	self.ship_constants.PID_SETTINGS.POS.P,
+	-- 										self.ship_constants.PID_SETTINGS.POS.I,
+	-- 										self.ship_constants.PID_SETTINGS.POS.D,
+	-- 										-max_lin_acc,max_lin_acc)
+	-- self.rot_x_PID = pidcontrollers.PID_Continuous_Scalar(self.ship_constants.PID_SETTINGS.ROT.X.P,
+	-- 												self.ship_constants.PID_SETTINGS.ROT.X.I,
+	-- 												self.ship_constants.PID_SETTINGS.ROT.X.D,
+	-- 												-max_ang_acc[1][1],max_ang_acc[1][1])
+	-- self.rot_y_PID = pidcontrollers.PID_Continuous_Scalar(self.ship_constants.PID_SETTINGS.ROT.Y.P,
+	-- 												self.ship_constants.PID_SETTINGS.ROT.Y.I,
+	-- 												self.ship_constants.PID_SETTINGS.ROT.Y.D,
+	-- 												-max_ang_acc[2][1],max_ang_acc[2][1])
+	-- self.rot_z_PID = pidcontrollers.PID_Continuous_Scalar(self.ship_constants.PID_SETTINGS.ROT.Z.P,
+	-- 												self.ship_constants.PID_SETTINGS.ROT.Z.I,
+	-- 												self.ship_constants.PID_SETTINGS.ROT.Z.D,
+	-- 												-max_ang_acc[3][1],max_ang_acc[3][1])
+end
+
+function DroneBaseClassSP:calculateAcceleration(rotation_error,position_error)--return rotational-acceletarion and lateral-acceleration in that order
+	return 	matrix({
+				{self.rot_x_PID:run(rotation_error.x)},
+				{self.rot_y_PID:run(rotation_error.y)},
+				{self.rot_z_PID:run(rotation_error.z)}
+			}),
+			self.pos_PID:run(position_error)
 end
 --OVERRIDABLE FUNCTIONS--
 
@@ -132,17 +180,6 @@ function DroneBaseClassSP:buildJacobianTranspose(thruster_table)
 		}
 	end
 
-	-- local jacobian = matrix.transpose(jacobian_transpose)
-	-- jacobian = matrix.replace( jacobian,function(e) return e>0 and 1 or 0 end)
-	-- local count_matrix = matrix(10,1,1)
-	-- local inv_thruster_count_per_movement = matrix.mul(jacobian,count_matrix)
-	-- inv_thruster_count_per_movement = matrix.replace(inv_thruster_count_per_movement,function(e) return 1/e end)
-	-- for i,v in ipairs(jacobian_transpose) do
-	-- 	for ii,vv in ipairs(v) do
-	-- 		jacobian_transpose[i][ii] = vv*inv_thruster_count_per_movement[ii][1]
-	-- 	end
-	-- end
-
 	local total = {0,0,0,0,0,0,0,0,0,0,0,0}
 
 	for i,v in ipairs(jacobian_transpose) do
@@ -221,48 +258,11 @@ function DroneBaseClassSP:initFlightConstants()
 
 end
 
-function DroneBaseClassSP:initPID(max_lin_acc,max_ang_acc)
-	self.pos_PID = pidcontrollers.PID_Discrete_Vector(	self.ship_constants.PID_SETTINGS.POS.P,
-											self.ship_constants.PID_SETTINGS.POS.I,
-											self.ship_constants.PID_SETTINGS.POS.D,
-											-max_lin_acc,max_lin_acc)
-
-	self.rot_x_PID = pidcontrollers.PID_Discrete_Scalar(self.ship_constants.PID_SETTINGS.ROT.X.P,
-													self.ship_constants.PID_SETTINGS.ROT.X.I,
-													self.ship_constants.PID_SETTINGS.ROT.X.D,
-													-max_ang_acc[1][1],max_ang_acc[1][1])
-	self.rot_y_PID = pidcontrollers.PID_Discrete_Scalar(self.ship_constants.PID_SETTINGS.ROT.Y.P,
-													self.ship_constants.PID_SETTINGS.ROT.Y.I,
-													self.ship_constants.PID_SETTINGS.ROT.Y.D,
-													-max_ang_acc[2][1],max_ang_acc[2][1])
-	self.rot_z_PID = pidcontrollers.PID_Discrete_Scalar(self.ship_constants.PID_SETTINGS.ROT.Z.P,
-													self.ship_constants.PID_SETTINGS.ROT.Z.I,
-													self.ship_constants.PID_SETTINGS.ROT.Z.D,
-													-max_ang_acc[3][1],max_ang_acc[3][1])
-
-	-- self.pos_PID = pidcontrollers.PID_Continuous_Vector(	self.ship_constants.PID_SETTINGS.POS.P,
-	-- 										self.ship_constants.PID_SETTINGS.POS.I,
-	-- 										self.ship_constants.PID_SETTINGS.POS.D,
-	-- 										-max_lin_acc,max_lin_acc)
-	-- self.rot_x_PID = pidcontrollers.PID_Continuous_Scalar(self.ship_constants.PID_SETTINGS.ROT.X.P,
-	-- 												self.ship_constants.PID_SETTINGS.ROT.X.I,
-	-- 												self.ship_constants.PID_SETTINGS.ROT.X.D,
-	-- 												-max_ang_acc[1][1],max_ang_acc[1][1])
-	-- self.rot_y_PID = pidcontrollers.PID_Continuous_Scalar(self.ship_constants.PID_SETTINGS.ROT.Y.P,
-	-- 												self.ship_constants.PID_SETTINGS.ROT.Y.I,
-	-- 												self.ship_constants.PID_SETTINGS.ROT.Y.D,
-	-- 												-max_ang_acc[2][1],max_ang_acc[2][1])
-	-- self.rot_z_PID = pidcontrollers.PID_Continuous_Scalar(self.ship_constants.PID_SETTINGS.ROT.Z.P,
-	-- 												self.ship_constants.PID_SETTINGS.ROT.Z.I,
-	-- 												self.ship_constants.PID_SETTINGS.ROT.Z.D,
-	-- 												-max_ang_acc[3][1],max_ang_acc[3][1])
-end
-
 function DroneBaseClassSP:calculateMovement()
 
 	self:initFlightConstants()
 
-	self:initPID(self.max_linear_acceleration,self.max_angular_acceleration)
+	self:initAccelerationControllers()
 	
 	self.pwmMatrixList = utilities.PwmMatrixList(10)
 	
@@ -283,34 +283,18 @@ function DroneBaseClassSP:calculateMovement()
 		self.ship_global_position = self.sensors.shipReader:getWorldspacePosition()
 		self.ship_global_position = vector.new(self.ship_global_position.x,self.ship_global_position.y,self.ship_global_position.z)
 		
-		--FOR ANGULAR MOVEMENT--
 		self.rotation_error = getQuaternionRotationError(self.target_rotation,self.ship_rotation)
-		--self:debugProbe({NEW_rotation_error=self.rotation_error})
-		local pid_output_angular_acceleration = matrix(
-		{
-			{self.rot_x_PID:run(self.rotation_error.x)},
-			{self.rot_y_PID:run(self.rotation_error.y)},
-			{self.rot_z_PID:run(self.rotation_error.z)}
-		})
-		--self:debugProbe({xpidsampleint=self.rot_x_PID.sample_interval})
-		--self:debugProbe({NEW_ang_acc_pid=pid_output_angular_acceleration})
-		local net_torque = matrix.mul(self.ship_constants.LOCAL_INERTIA_TENSOR,pid_output_angular_acceleration)
-		
-		--self:debugProbe({net_torqueNew=net_torque})
-		
-		--FOR LINEAR MOVEMENT--
 		self.position_error = getLocalPositionError(self.target_global_position,self.ship_global_position,self.ship_rotation)
-		local pid_output_linear_acceleration = self.pos_PID:run(self.position_error)
-		--self:debugProbe({position_error=self.position_error})
-		--self:debugProbe({pid_output_linear_acceleration2=pid_output_linear_acceleration})
+		
+		local pid_output_angular_acceleration,pid_output_linear_acceleration = self:calculateAcceleration(self.rotation_error,self.position_error)
+
+		local net_torque = matrix.mul(self.ship_constants.LOCAL_INERTIA_TENSOR,pid_output_angular_acceleration)
 		
 		local local_gravity_acceleration = self.ship_rotation:inv():rotateVector3(self.gravity_acceleration_vector)
 		local net_linear_acceleration = pid_output_linear_acceleration:sub(local_gravity_acceleration)
-		--self:debugProbe({net_linear_acceleration2=net_linear_acceleration})
+
 		local net_force = net_linear_acceleration*self.ship_mass
-		
-		--self:debugProbe({net_linear_acceleration=net_linear_acceleration,net_force=net_force})
-		
+
 		local net = matrix(
 		{
 			{max(0,net_force.x)},--positive
