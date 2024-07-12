@@ -312,9 +312,7 @@ function DroneBaseClass:initConstants(ship_constants_config)
 	}
 	
 	for constant_name,new_value in pairs(ship_constants_config) do
-		if (self.ship_constants[constant_name]~=nil) then
-			self.ship_constants[constant_name] = new_value
-		end
+		self.ship_constants[constant_name] = new_value
 	end
 	
 	self:rotateInertiaTensors()
