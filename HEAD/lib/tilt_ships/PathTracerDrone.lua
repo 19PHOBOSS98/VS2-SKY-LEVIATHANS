@@ -18,6 +18,9 @@ function PathTracerDrone:setCustomTargetRotationPathing(rotation,tangent,normal)
 	new_rotation = quaternion.fromToRotation(new_rotation:localPositiveY(), tangent)*new_rotation
 		return new_rotation
 end
+
+function PathTracerDrone:droneCustomFlightLoopBehavior()
+end
 --overridable functions--
 
 --custom--
@@ -171,6 +174,8 @@ function PathTracerDrone:overrideShipFrameCustomFlightLoopBehavior()
 		end
 
 		ptd.prev_time = current_time
+
+		ptd:droneCustomFlightLoopBehavior()
 	end
 end
 
