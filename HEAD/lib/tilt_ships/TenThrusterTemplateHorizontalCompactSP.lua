@@ -9,34 +9,6 @@ TenThrusterTemplateHorizontalCompactSP.RSIBow = peripheral.wrap("front")
 TenThrusterTemplateHorizontalCompactSP.RSIStern = peripheral.wrap("back")
 
 --OVERRIDABLE FUNCTIONS--
-function TenThrusterTemplateHorizontalCompactSP:powerThrusters(component_redstone_power)
-	if(type(component_redstone_power) == "number")then
-		self.RSIBow.setAnalogOutput("south", component_redstone_power) 		-- +Z
-		self.RSIBow.setAnalogOutput("up", component_redstone_power)			-- -X
-		self.RSIBow.setAnalogOutput("down", component_redstone_power)		-- +X
-		self.RSIBow.setAnalogOutput("east", component_redstone_power)		-- -Y
-		self.RSIBow.setAnalogOutput("west", component_redstone_power) 		-- +Y
-
-		self.RSIStern.setAnalogOutput("north", component_redstone_power) 	-- -Z
-		self.RSIStern.setAnalogOutput("up", component_redstone_power)		-- -X
-		self.RSIStern.setAnalogOutput("down", component_redstone_power)		-- +X
-		self.RSIStern.setAnalogOutput("east", component_redstone_power)		-- -Y
-		self.RSIStern.setAnalogOutput("west", component_redstone_power)		-- +Y
-	else
-		self.RSIBow.setAnalogOutput("south", component_redstone_power[1]) 		-- +Z
-		self.RSIBow.setAnalogOutput("up", component_redstone_power[2])			-- -X
-		self.RSIBow.setAnalogOutput("down", component_redstone_power[3])		-- +X
-		self.RSIBow.setAnalogOutput("east", component_redstone_power[4])		-- -Y
-		self.RSIBow.setAnalogOutput("west", component_redstone_power[5]) 		-- +Y
-
-		self.RSIStern.setAnalogOutput("north", component_redstone_power[6]) 	-- -Z
-		self.RSIStern.setAnalogOutput("up", component_redstone_power[7])		-- -X
-		self.RSIStern.setAnalogOutput("down", component_redstone_power[8])		-- +X
-		self.RSIStern.setAnalogOutput("east", component_redstone_power[9])		-- -Y
-		self.RSIStern.setAnalogOutput("west", component_redstone_power[10])		-- +Y
-	end
-end
-
 function TenThrusterTemplateHorizontalCompactSP:organizeThrusterTable(thruster_table)
 
 	local new_thruster_table = {}
@@ -68,6 +40,34 @@ function TenThrusterTemplateHorizontalCompactSP:organizeThrusterTable(thruster_t
 	end
 
 	return new_thruster_table
+end
+
+function TenThrusterTemplateHorizontalCompactSP:powerThrusters(component_redstone_power)
+	if(type(component_redstone_power) == "number")then
+		self.RSIBow.setAnalogOutput("south", component_redstone_power) 		-- +Z
+		self.RSIBow.setAnalogOutput("up", component_redstone_power)			-- -X
+		self.RSIBow.setAnalogOutput("down", component_redstone_power)		-- +X
+		self.RSIBow.setAnalogOutput("east", component_redstone_power)		-- -Y
+		self.RSIBow.setAnalogOutput("west", component_redstone_power) 		-- +Y
+
+		self.RSIStern.setAnalogOutput("north", component_redstone_power) 	-- -Z
+		self.RSIStern.setAnalogOutput("up", component_redstone_power)		-- -X
+		self.RSIStern.setAnalogOutput("down", component_redstone_power)		-- +X
+		self.RSIStern.setAnalogOutput("east", component_redstone_power)		-- -Y
+		self.RSIStern.setAnalogOutput("west", component_redstone_power)		-- +Y
+	else
+		self.RSIBow.setAnalogOutput("south", component_redstone_power[1]) 		-- +Z
+		self.RSIBow.setAnalogOutput("up", component_redstone_power[2])			-- -X
+		self.RSIBow.setAnalogOutput("down", component_redstone_power[3])		-- +X
+		self.RSIBow.setAnalogOutput("east", component_redstone_power[4])		-- -Y
+		self.RSIBow.setAnalogOutput("west", component_redstone_power[5]) 		-- +Y
+
+		self.RSIStern.setAnalogOutput("north", component_redstone_power[6]) 	-- -Z
+		self.RSIStern.setAnalogOutput("up", component_redstone_power[7])		-- -X
+		self.RSIStern.setAnalogOutput("down", component_redstone_power[8])		-- +X
+		self.RSIStern.setAnalogOutput("east", component_redstone_power[9])		-- -Y
+		self.RSIStern.setAnalogOutput("west", component_redstone_power[10])		-- +Y
+	end
 end
 
 function TenThrusterTemplateHorizontalCompactSP:getOffsetDefaultShipOrientation(default_ship_orientation)
