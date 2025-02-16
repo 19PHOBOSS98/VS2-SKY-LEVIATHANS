@@ -36,8 +36,8 @@ I've mostly been using them as personal mobile weapons platforms:
    <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/dd711759-589a-4317-a82f-671ab45baf45" alt="divider"></picture>
 </div>
 
-I've released the code and made the [tutorial series](https://youtube.com/playlist?list=PL1bsn0MYd0U66LAyrpklsqIQDQLFjEzH0&si=Uo8iZ7GcrLQ3X5zk) in my Youtube channel. 
-<a href="https://youtu.be/scK8bXvlTRU"><img src="https://github.com/user-attachments/assets/0a5f7a7d-33cb-4b44-8851-457f44a46418" width=1000></a>
+I've released [the code](https://github.com/19PHOBOSS98/OMNI-DRONES) and made the [tutorial series](https://youtube.com/playlist?list=PL1bsn0MYd0U66LAyrpklsqIQDQLFjEzH0&si=Uo8iZ7GcrLQ3X5zk) in my Youtube channel. 
+<a href="https://youtu.be/scK8bXvlTRU"><img src="https://github.com/user-attachments/assets/6c3aa62f-4617-4bf0-97da-efd5640ee0fd" width=1000></a>
 
 Here's also a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZBm6LGZzIw&si=p_5jTw0TJzlFv06-) of what I have of the system so far.
 
