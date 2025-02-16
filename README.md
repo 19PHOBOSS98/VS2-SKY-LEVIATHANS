@@ -36,11 +36,10 @@ I've mostly been using them as personal mobile weapons platforms:
    <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/dd711759-589a-4317-a82f-671ab45baf45" alt="divider"></picture>
 </div>
 
+I've released the code and made the [tutorial series](https://youtube.com/playlist?list=PL1bsn0MYd0U66LAyrpklsqIQDQLFjEzH0&si=Uo8iZ7GcrLQ3X5zk) in my Youtube channel. 
+<a href="https://youtu.be/scK8bXvlTRU"><img src="https://github.com/user-attachments/assets/0a5f7a7d-33cb-4b44-8851-457f44a46418" width=1000></a>
 
-I'll be releasing the code and continuing the tutorial series soon in my Youtube channel. 
-Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZBm6LGZzIw&si=Ps_k6OIW1dDwLACP) of what I have of the system so far:
-<a href="https://youtu.be/UjBYnDKEcdQ?si=Us9nnENOXruT_1JO"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/f1bc447c-8a32-4a5d-8051-02132ebba51e" width=1000></a>
-
+Here's also a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZBm6LGZzIw&si=p_5jTw0TJzlFv06-) of what I have of the system so far.
 
 <div align="center">
    <h2>LOADING INTO THE DEMO MAPS</h2>
