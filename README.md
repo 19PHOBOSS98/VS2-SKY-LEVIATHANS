@@ -118,33 +118,50 @@ Here is a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZ
 <div align="center">
    <h3>HOW TO SETUP A CUSTOM LEVIATHAN DRONE SWARM</h3>
 </div>
+
 ### Before Loading Into The World
+
 * install the included resourcepacks
+
 * install the included datapack
+
 * install the included modpack
+
 * install the included shaderpack
+
 * add the included nbt schematic files to your game's `schematics` folder:
       `VS2-SKY-WHALES\DRONE_STRUCTURE_SCHEMATICS\SCHEMATICS\...`
       `VS2-SKY-WHALES\MIRAGE\STRUCTURE_FILES\...`
+
 * add the included V-Mod schematics to your game's `VMod-Schematics` folder:
       `VS2-SKY-WHALES\DRONE_STRUCTURE_SCHEMATICS\VMOD_SCHEMATICS\...`
+
 * In the `SAVE_FOLDER/serverconfig/some_peripherals-SERVER.toml` file, configure `SomePeripheralsConfig.RadarSettings>max_entity_search_radius & max_ship_search_radius` both to 500
+
 * Incase of having too many active drones, in `SAVE_FOLDER/serverconfig/computercraft-server.toml` file, increment `computer_threads` to a higher value
 
 ### After Loading Into The World
+
  1. Ready two ComputerCraft:Pocket-Computers to use as your Swarm Controller and Debugger tablets
+
  2. Ready at least two different ComputerCraft:Turtles with Ender Modems. These will be our drone pilots
+
       Each new CC:Turtle you put down has a unique Computer-ID. This points the turtle to a folder: `WORLD_SAVE/computercraft/computer/[COMPUTER_ID_HERE]` where all it's Lua scripts are saved.
       
       We need atleast 1 to act as our head-drone and another one as our segment-drone.   
       
       In Creative, you can copy-paste a CC:Turtle (CTRL+SHIFT+MIDDLE-CLICK on block) to have multiple Turtles in the world with the same Computer-ID.
+
       Each of those Turtles would be pointing to the same Computer Folder. This makes it easier to setup new drones without copy pasting more code.
+
       However, you can't typically copy-paste like this in Survival. In that case you need to copy-paste the code to new computer-folders each time you       add a new drone to the world.
     
  3. Copy the Swarm Controller Code to your Swarm Controller's computer-folder
+
  4. Copy the Debugger Code to your Debugger's computer-folder
+
  5. Copy the drone Code from the `HEAD` folder to your head-drone's computer-folder
+
  6. Copy the drone Code from the `BODY` folder to your segment-drones' computer-folder
 
       Again, you need to copy it to different folders if you're in survival
